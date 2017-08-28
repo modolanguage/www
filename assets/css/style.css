@@ -1,0 +1,373 @@
+.logoColor {
+  background-color: #3399CC !important;
+}
+
+.darkBlue {
+  background-color: #135B7F !important;
+}
+
+.lightBlue {
+  background-color: #59C8FF !important;
+}
+
+.darkBrown {
+  background-color: #7F4906 !important;
+}
+
+.lighBrown {
+  background-color: #CC8833 !important;
+}
+
+/* Code Colors */
+.blue-code {
+  color: #66d9ef;
+}
+
+.purple-code {
+  color: #8a7bff;
+}
+
+.red-code {
+  color: #e92772;
+}
+
+.green-code {
+  color: #a6e22d;
+}
+
+.orange-code {
+  color: #fd9720;
+}
+
+.yellow-code {
+  color: #e6db74;
+}
+
+.gray-code {
+  color: #8f908a;
+}
+
+strong {
+  color: #3C3E43;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+pre {
+  padding: 15px;
+}
+
+p {
+  font-size: 20px;
+}
+
+blockquote {
+  font-size: 1.2em;
+  text-rendering: optimizeLegibility;
+  color: #383839;
+  border-left: 5px solid #3399CC;
+}
+
+.row {
+  position: relative;
+}
+
+.light {
+  font-weight: 200 !important;
+}
+
+.alignedCenter {
+  align-items: center;
+}
+
+.justifiedCenter {
+  justify-content: center;
+}
+
+.borderRight {
+  border-right: 1px solid #E8E9EC;
+}
+
+.landing {
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+.displayFlex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+#sectionWelcome,
+#sectionPromotionTable,
+#sectionReadytoGo {
+  padding: 150px 0px !important;
+}
+
+#sectionIndexBanner {
+  position: relative;
+  /* ---- particles.js container ---- */
+}
+#sectionIndexBanner .container {
+  z-index: 99 !important;
+  width: auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#sectionIndexBanner .container #btnGoStart {
+  background: #3399CC;
+}
+#sectionIndexBanner .container #btnGoSpecification {
+  background: #135B7F;
+}
+#sectionIndexBanner .container h1 {
+  height: 4em;
+  margin-bottom: 0 !important;
+}
+#sectionIndexBanner .container h1 img {
+  height: 100%;
+}
+#sectionIndexBanner .container h1 + span {
+  color: #3399CC;
+}
+#sectionIndexBanner .container pre {
+  display: inline-block;
+  background: transparent;
+  text-align: left;
+  font-size: 1.3em;
+  transform: translateY(15px);
+  opacity: 0;
+  transition: all 1s;
+}
+#sectionIndexBanner .container #rowLogo {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: all 1s;
+}
+#sectionIndexBanner #mouse_scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scale(0.8);
+  z-index: 999 !important;
+}
+#sectionIndexBanner #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#mainDocumentation {
+  position: relative;
+}
+#mainDocumentation #ulSideNav {
+  position: sticky;
+  transform: none !important;
+  height: 100vh;
+  overflow-y: scroll;
+}
+#mainDocumentation #ulSideNav #aLogo {
+  display: grid;
+  display: -ms-grid;
+  width: 100%;
+  height: 100%;
+}
+#mainDocumentation .wrapper {
+  flex-grow: 1;
+}
+#mainDocumentation .wrapper section {
+  padding: 1.5em;
+}
+#mainDocumentation .wrapper section * {
+  max-width: 720px;
+}
+#mainDocumentation .wrapper section .container h2 {
+  font-size: 2.1em;
+  border-bottom: 1px dashed;
+  padding-bottom: 5px;
+}
+#mainDocumentation .wrapper section .container p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #646C7F;
+}
+#mainDocumentation .wrapper section .container p a {
+  color: #0087F7;
+  text-decoration: none;
+}
+#mainDocumentation .wrapper section .container p a:hover {
+  text-decoration: underline;
+}
+#mainDocumentation .wrapper section .container ul {
+  font-size: 16px !important;
+  color: #646C7F;
+}
+
+#sectionWelcome {
+  background: #DCDDDE;
+}
+#sectionWelcome #divWelcomeText {
+  flex-basis: 50%;
+  padding-right: 20px;
+}
+#sectionWelcome #divWelcomeText p {
+  font-size: 20px;
+}
+#sectionWelcome #divWelcomeCodePreview {
+  width: 100%;
+}
+#sectionWelcome #divWelcomeCodePreview .card-panel {
+  padding: 0px !important;
+}
+
+#sectionPromotionTable {
+  background: #383839;
+}
+
+#sectionReadytoGo {
+  background: #F5F6F8;
+}
+#sectionReadytoGo > .container {
+  flex-direction: column;
+}
+#sectionReadytoGo > .container h1 {
+  color: #135B7F;
+}
+#sectionReadytoGo > .container h1 #imgInlineTextLogo {
+  opacity: 0;
+  height: 2.5em;
+  vertical-align: middle;
+}
+
+#navbarFixed {
+  background: white;
+  top: 0;
+  position: absolute;
+  transform: translateY(-64px);
+  transition: all .3s;
+  z-index: 999;
+}
+
+.brand-logo {
+  height: 100%;
+  width: 190px;
+}
+.brand-logo img {
+  width: 100%;
+}
+
+#sublime {
+  position: relative;
+  width: 100%;
+  margin: 25px auto;
+  padding: 2% !important;
+  list-style: none;
+  border-top: 25px solid #efefef;
+  border-radius: 10px;
+  background: #262728;
+  color: #f1f1f1;
+  font-family: monospace;
+  font-weight: 300;
+  font-size: 1.1em;
+  box-shadow: 0 0px 50px rgba(0, 0, 0, 0.33), 10px 25px 35px rgba(0, 0, 0, 0.39);
+}
+#sublime li {
+  min-height: 25px;
+  line-height: 25px;
+}
+#sublime .buttons {
+  min-height: 0;
+  position: absolute;
+  top: -18px;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  background-color: #ff5d5b;
+  border: 1px solid #e64344;
+}
+#sublime .buttons:before, #sublime .buttons:after {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  top: -1px;
+}
+#sublime .buttons:before {
+  left: 20px;
+  border: 1px solid #e3a041;
+  background-color: #ffbc4c;
+}
+#sublime .buttons:after {
+  left: 40px;
+  border: 1px solid #13ad46;
+  background-color: #00c956;
+}
+#sublime .tab {
+  margin-left: 2%;
+  list-style: none;
+}
+#sublime .cursor:before {
+  opacity: 0;
+  content: "|";
+  color: #f1f1f1;
+  animation: blink 0.8s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#sectionHomeDownload {
+  background: white;
+  padding: 100px 0px !important;
+}
+
+.collapsible-body li a {
+  color: #777878 !important;
+}
+.collapsible-body li.active {
+  background: #F5F6F8 !important;
+}
+
+#divIndexMobileContainer {
+  width: 85% !important;
+}
+
+#h1Logo > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  #sectionWelcome .container {
+    flex-direction: column;
+  }
+
+  #sectionReadytoGo .container {
+    text-align: center;
+  }
+  #sectionReadytoGo .container h1 > img {
+    height: 1em;
+  }
+}
+#mobile-demo #btnQuickstart {
+  text-align: left !important;
+}
+
+/*# sourceMappingURL=style.css.map */
