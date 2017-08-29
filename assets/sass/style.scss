@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
+
 // Variables
 $logoColor: #3399CC;
 $darkBlue: #135B7F;
@@ -6,7 +8,7 @@ $darkBrown: #7F4906;
 $lightBrown: #CC8833;
 
 $firstGrey: #F5F6F8;
-$secondGrey: #DCDDDE;
+$secondGrey: #F1F1F1;
 $thirdGrey: #B6B7B8;
 $forthGrey: #777878;
 $fifthGrey: #383839;
@@ -17,6 +19,9 @@ $sublime-base-color: #f1f1f1;
 $sublime-button-radius: 13px;
 
 $documentationPara: #646C7F;
+
+// Code Preview Font
+$anonPro: 'Anonymous Pro', monospace;
 
 .logoColor { background-color: $logoColor !important; }
 .darkBlue { background-color: $darkBlue !important; }
@@ -51,12 +56,15 @@ blockquote {
   color: $fifthGrey;
   border-left: 5px solid $logoColor;
 }
+.blockImportant {
+  border-color: #FF4545;
+}
 .row { position: relative; }
 .light { font-weight: 200 !important; }
 .alignedCenter { align-items: center; }
 .justifiedCenter { justify-content: center; }
 .borderRight { border-right: 1px solid #E8E9EC};
-.landing { 
+.landing {
   height: 100vh !important;
   width: 100vw !important; 
 }
@@ -66,6 +74,17 @@ blockquote {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+}
+
+.divCodePreview {
+  code {
+    font-family: $anonPro;
+    font-size: 18px;
+    pre {
+      background: $firstGrey !important;
+      border-radius: 3px;
+    }
+  }
 }
 
 #sectionWelcome,
@@ -114,23 +133,13 @@ blockquote {
     transform: translateX(-50%) scale(.8);
     z-index: 999 !important;
   }
-
-  /* ---- particles.js container ---- */
-
-  #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    // z-index: -1;
-  }
 }
 #mainDocumentation {
   position: relative;
+  ol,ul {background: #FFF;}
+  #btnContact { 
+    background: $logoColor;
+  }
 
   #ulSideNav {
     position: sticky;
@@ -151,9 +160,6 @@ blockquote {
     section {
       padding: 1.5em;
 
-      * {
-        max-width: 720px;
-      }
       .container {
         h2 {
           font-size: 2.1em;
@@ -179,7 +185,17 @@ blockquote {
         }
       }
     }
+    section:nth-child(odd) {
+      background: #FFF;
+    }
+    section:nth-child(even) {
+      background: $firstGrey;
+    }
   }
+
+  // #sectionContact {
+  //   background: $logoColor;
+  // }
 }
 #sectionWelcome {
   background: $secondGrey;
@@ -244,7 +260,7 @@ blockquote {
   border-radius: 10px;
   background: $sublime-background-color;
   color: $sublime-base-color;
-  font-family: monospace;
+  font-family: $anonPro;
   font-weight: 300;
   font-size: 1.1em;
   box-shadow: 0 0px 50px rgba(0, 0, 0, 0.33), 10px 25px 35px rgba(0, 0, 0, 0.39);
@@ -315,6 +331,34 @@ blockquote {
     a { color: $forthGrey !important; }
   }
   li.active {background: $firstGrey !important;}
+}
+
+/* label color */
+.input-field label {
+  color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: $logoColor;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid $logoColor;
+  box-shadow: 0 1px 0 0 $logoColor;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid $logoColor;
+  box-shadow: 0 1px 0 0 $logoColor;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: $logoColor;
+}
+form {
+  button {
+    background: $logoColor !important;
+  }
 }
 
 // Responsive
