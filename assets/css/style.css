@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro");
 .logoColor {
   background-color: #3399CC !important;
 }
@@ -70,6 +71,10 @@ blockquote {
   border-left: 5px solid #3399CC;
 }
 
+.blockImportant {
+  border-color: #FF4545;
+}
+
 .row {
   position: relative;
 }
@@ -103,6 +108,15 @@ blockquote {
   display: flex;
 }
 
+.divCodePreview code {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+}
+.divCodePreview code pre {
+  background: #F5F6F8 !important;
+  border-radius: 3px;
+}
+
 #sectionWelcome,
 #sectionPromotionTable,
 #sectionReadytoGo {
@@ -111,7 +125,6 @@ blockquote {
 
 #sectionIndexBanner {
   position: relative;
-  /* ---- particles.js container ---- */
 }
 #sectionIndexBanner .container {
   z-index: 99 !important;
@@ -156,19 +169,15 @@ blockquote {
   transform: translateX(-50%) scale(0.8);
   z-index: 999 !important;
 }
-#sectionIndexBanner #particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
 
 #mainDocumentation {
   position: relative;
+}
+#mainDocumentation ol, #mainDocumentation ul {
+  background: #FFF;
+}
+#mainDocumentation #btnContact {
+  background: #3399CC;
 }
 #mainDocumentation #ulSideNav {
   position: sticky;
@@ -187,9 +196,6 @@ blockquote {
 }
 #mainDocumentation .wrapper section {
   padding: 1.5em;
-}
-#mainDocumentation .wrapper section * {
-  max-width: 720px;
 }
 #mainDocumentation .wrapper section .container h2 {
   font-size: 2.1em;
@@ -212,9 +218,15 @@ blockquote {
   font-size: 16px !important;
   color: #646C7F;
 }
+#mainDocumentation .wrapper section:nth-child(odd) {
+  background: #FFF;
+}
+#mainDocumentation .wrapper section:nth-child(even) {
+  background: #F5F6F8;
+}
 
 #sectionWelcome {
-  background: #DCDDDE;
+  background: #F1F1F1;
 }
 #sectionWelcome #divWelcomeText {
   flex-basis: 50%;
@@ -276,7 +288,7 @@ blockquote {
   border-radius: 10px;
   background: #262728;
   color: #f1f1f1;
-  font-family: monospace;
+  font-family: "Anonymous Pro", monospace;
   font-weight: 300;
   font-size: 1.1em;
   box-shadow: 0 0px 50px rgba(0, 0, 0, 0.33), 10px 25px 35px rgba(0, 0, 0, 0.39);
@@ -344,6 +356,37 @@ blockquote {
 }
 .collapsible-body li.active {
   background: #F5F6F8 !important;
+}
+
+/* label color */
+.input-field label {
+  color: #000;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #3399CC;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #3399CC;
+  box-shadow: 0 1px 0 0 #3399CC;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #3399CC;
+  box-shadow: 0 1px 0 0 #3399CC;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #3399CC;
+}
+
+form button {
+  background: #3399CC !important;
 }
 
 #divIndexMobileContainer {
