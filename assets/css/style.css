@@ -95,6 +95,14 @@ blockquote {
   border-right: 1px solid #E8E9EC;
 }
 
+.noPadding {
+  padding: 0 !important;
+}
+
+.noMargin {
+  margin: 0 !important;
+}
+
 .landing {
   height: 100vh !important;
   width: 100vw !important;
@@ -130,7 +138,7 @@ blockquote {
   z-index: 99 !important;
   width: auto;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 #sectionIndexBanner .container #btnGoStart {
   background: #3399CC;
@@ -176,8 +184,8 @@ blockquote {
 #mainDocumentation ol, #mainDocumentation ul {
   background: #FFF;
 }
-#mainDocumentation #btnContact {
-  background: #3399CC;
+#mainDocumentation .col {
+  padding: 0 !important;
 }
 #mainDocumentation #ulSideNav {
   position: sticky;
@@ -185,17 +193,30 @@ blockquote {
   height: 100vh;
   overflow-y: scroll;
 }
-#mainDocumentation #ulSideNav #aLogo {
+#mainDocumentation #ulSideNav #aLogo,
+#mainDocumentation #slide-out #aLogo {
   display: grid;
   display: -ms-grid;
   width: 100%;
   height: 100%;
+}
+#mainDocumentation .ulSubCategory a {
+  font-weight: 200;
+  transition: all .1s;
+}
+#mainDocumentation .ulSubCategory a.active,
+#mainDocumentation .ulSubCategory a:active {
+  font-weight: 500;
+  border-left: 5px solid #59C8FF;
 }
 #mainDocumentation .wrapper {
   flex-grow: 1;
 }
 #mainDocumentation .wrapper section {
   padding: 1.5em;
+}
+#mainDocumentation .wrapper section .container {
+  width: 85% !important;
 }
 #mainDocumentation .wrapper section .container h2 {
   font-size: 2.1em;
@@ -261,13 +282,20 @@ blockquote {
   vertical-align: middle;
 }
 
-#navbarFixed {
+#navbarFixed,
+#divMobileSideNav,
+#navbar-transparent {
   background: white;
   top: 0;
   position: absolute;
   transform: translateY(-64px);
   transition: all .3s;
   z-index: 999;
+}
+
+#navbar-transparent,
+#divMobileSideNav {
+  transform: none;
 }
 
 .brand-logo {
@@ -389,6 +417,22 @@ form button {
   background: #3399CC !important;
 }
 
+.divContactWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -6px;
+  height: 360px;
+  background: linear-gradient(-135deg, #2a99ef 20%, #2CCEFF 80%);
+}
+
+#divContactCard {
+  margin: auto !important;
+  position: absolute;
+  top: -250px;
+  color: #808080;
+}
+
 #divIndexMobileContainer {
   width: 85% !important;
 }
@@ -397,6 +441,11 @@ form button {
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  #sectionGetStarted {
+    margin-top: 94px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   #sectionWelcome .container {
     flex-direction: column;

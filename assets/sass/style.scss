@@ -64,6 +64,8 @@ blockquote {
 .alignedCenter { align-items: center; }
 .justifiedCenter { justify-content: center; }
 .borderRight { border-right: 1px solid #E8E9EC};
+.noPadding { padding: 0 !important; }
+.noMargin { margin: 0 !important; }
 .landing {
   height: 100vh !important;
   width: 100vw !important; 
@@ -100,7 +102,7 @@ blockquote {
     z-index: 99 !important;
     width: auto;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     #btnGoStart { background: $logoColor; }
     #btnGoSpecification { background: $darkBlue; }
     h1 {
@@ -137,20 +139,35 @@ blockquote {
 #mainDocumentation {
   position: relative;
   ol,ul {background: #FFF;}
-  #btnContact { 
-    background: $logoColor;
-  }
+
+  .col{
+    padding: 0 !important;
+  } 
 
   #ulSideNav {
     position: sticky;
     transform: none !important;
     height: 100vh;
     overflow-y: scroll;
+  }
+  #ulSideNav,
+  #slide-out {
     #aLogo {
       display: grid;
       display: -ms-grid;
       width: 100%;
       height: 100%;
+    }
+  }
+  .ulSubCategory {
+    a {
+      font-weight: 200;
+      transition: all .1s;
+    }
+    a.active,
+    a:active {
+      font-weight: 500;
+      border-left: 5px solid $lightBlue;
     }
   }
 
@@ -161,6 +178,8 @@ blockquote {
       padding: 1.5em;
 
       .container {
+        width: 85% !important;
+
         h2 {
           font-size: 2.1em;
           border-bottom: 1px dashed;
@@ -192,10 +211,6 @@ blockquote {
       background: $firstGrey;
     }
   }
-
-  // #sectionContact {
-  //   background: $logoColor;
-  // }
 }
 #sectionWelcome {
   background: $secondGrey;
@@ -234,13 +249,19 @@ blockquote {
   }
 }
 
-#navbarFixed {
+#navbarFixed,
+#divMobileSideNav,
+#navbar-transparent {
   background: white;
   top: 0;
   position: absolute;
   transform: translateY(-64px);
   transition: all .3s;
   z-index: 999;
+}
+#navbar-transparent,
+#divMobileSideNav {
+  transform: none;
 }
 .brand-logo {
   height: 100%;
@@ -360,6 +381,20 @@ form {
     background: $logoColor !important;
   }
 }
+.divContactWrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -6px;
+  height: 360px;
+  background: linear-gradient(-135deg,#2a99ef 20%,#2CCEFF 80%);
+}
+#divContactCard {
+  margin: auto !important;
+  position: absolute;
+  top: -250px;
+  color: #808080;
+}
 
 // Responsive
 
@@ -369,7 +404,11 @@ form {
 #h1Logo {
   &>img { width: 100%; }
 }
-
+@media screen and (max-width: 992px) {
+  #sectionGetStarted {
+    margin-top: 94px !important;
+  }
+}
 @media screen and (max-width: 600px){
   #sectionWelcome {
     .container {
