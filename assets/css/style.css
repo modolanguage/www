@@ -429,7 +429,7 @@ form button {
 #divContactCard {
   margin: auto !important;
   position: absolute;
-  top: -250px;
+  top: -250px !important;
   color: #808080;
 }
 
