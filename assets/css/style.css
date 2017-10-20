@@ -153,22 +153,28 @@ blockquote {
 #sectionIndexBanner .container h1 img {
   height: 100%;
 }
-#sectionIndexBanner .container h1 + span {
-  color: #3399CC;
-}
 #sectionIndexBanner .container pre {
   display: inline-block;
   background: transparent;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
   transform: translateY(15px);
   opacity: 0;
   transition: all 1s;
+  vertical-align: top;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 #sectionIndexBanner .container #rowLogo {
   opacity: 0;
   transform: translateY(-15px);
   transition: all 1s;
+}
+#rowLogo h2 {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0px;
+  color: #3399CC;
 }
 #sectionIndexBanner #mouse_scroll {
   position: absolute;
@@ -177,7 +183,9 @@ blockquote {
   transform: translateX(-50%) scale(0.8);
   z-index: 999 !important;
 }
-
+#sectionIndexBanner #rowBannerButtons {
+  margin-bottom: 100px;
+}
 #mainDocumentation {
   position: relative;
 }
