@@ -141,10 +141,10 @@ blockquote {
   justify-content: space-between;
 }
 #sectionIndexBanner .container #btnGoStart {
-  background: #3399CC;
+  background: rgb(51, 153, 204);
 }
-#sectionIndexBanner .container #btnGoSpecification {
-  background: #135B7F;
+#sectionIndexBanner .container .buttonGoSpecification {
+  background: rgb(103, 184, 222);
 }
 #sectionIndexBanner .container h1 {
   height: 4em;
