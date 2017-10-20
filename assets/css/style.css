@@ -146,6 +146,14 @@ blockquote {
 #sectionIndexBanner .container .buttonGoSpecification {
   background: rgb(103, 184, 222);
 }
+
+#sectionIndexBanner .container .buttonGoSpecification i,
+#sectionIndexBanner .container .buttonGoSpecification span {
+  display: inline-block;
+  float: none;
+  overflow: hidden;
+}
+
 #sectionIndexBanner .container h1 {
   height: 4em;
   margin-bottom: 0 !important;
@@ -470,4 +478,8 @@ form button {
   text-align: left !important;
 }
 
+.footer-copyright .container a {
+  text-decoration: underline;
+  color: #f9f9f9;
+}
 /*# sourceMappingURL=style.css.map */

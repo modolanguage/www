@@ -25,23 +25,23 @@
 <body>
   <nav id="navbarFixed" class="white">
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo light-blue-text"><img src="assets/img/Modo.png" alt="Modo"></a>
+      <a href="index.html" class="brand-logo light-blue-text"><img src="assets/img/modo.svg" alt="Modo"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionAbout">About</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionSpecification">Specification</a></li>
-        <li><a class="grey-text" href="#sectionHomeDownload">Downloads</a></li>
+        <li><a class="grey-text active" href="index.html">Home</a></li>
+        <li><a class="grey-text" href="documentation.html#about">About</a></li>
+        <li><a class="grey-text" href="documentation.html#specification">Specification</a></li>
+        <li><a class="grey-text" href="#download">Downloads</a></li>
         <li><a class="grey-text" href="contact.html">Contact</a></li>
-        <li><a class="blue-text text-lighten-1 white" href="documentation.html#sectionGetStarted">Get Started!</a></li>
+        <li><a class="blue-text text-lighten-1 white" href="documentation.html#get_started">Get Started!</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionAbout">About</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionSpecification">Specification</a></li>
-        <li><a class="grey-text" href="#sectionHomeDownload">Downloads</a></li>
+        <li><a class="grey-text active" href="index.html">Home</a></li>
+        <li><a class="grey-text" href="documentation.html#about">About</a></li>
+        <li><a class="grey-text" href="documentation.html#specification">Specification</a></li>
+        <li><a class="grey-text" href="#download">Downloads</a></li>
         <li><a class="grey-text" href="contact.html">Contact</a></li>
-        <li><a id="btnQuickstart" class="btn light-green accent-4 white-text" href="documentation.html#sectionGetStarted">Get Started!</a></li>
+        <li><a id="btnQuickstart" class="btn light-green accent-4 white-text" href="documentation.html#get_started">Get Started!</a></li>
       </ul>
     </div>
   </nav>
@@ -49,7 +49,7 @@
   <section id="sectionIndexBanner" class="displayFlex landing">
     <div class="container displayFlex center black-text hide-on-small-only">
       <div class="row" id="rowLogo">
-        <h1><img src="assets/img/modo.png" alt="MODO"></h1>
+        <h1><img src="assets/img/modo.svg" alt="MODO"></h1>
         <h2>Modo. Modeling Language for Everyone!</h2>
       </div>
       <div class="row" id="rowCodePreview">
@@ -62,25 +62,25 @@
         </pre>
       </div>
       <div class="row center" id="rowBannerButtons">
-        <a href="documentation.html#sectionGetStarted" id="btnGoStart" class="btn btn-large">Get Started!</a>
+        <a href="documentation.html#get_started" id="btnGoStart" class="btn btn-large">Get Started!</a>
         <span style="margin: 0 5px;">&nbsp;</span>
-        <a href="documentation.html#sectionSpecification" id="btnGoSpecification" class="btn buttonGoSpecification btn-large">Specification</a>
+        <a href="documentation.html#specification" id="btnGoSpecification" class="btn buttonGoSpecification btn-large">Specification</a>
         <span style="margin: 0 5px;">&nbsp;</span>
-        <a target="_blank" href="https://github.com/modolanguage" class="btn buttonGoSpecification btn-large"><i class="ion-social-github"></i> GitHub</a>
+        <a target="_blank" href="https://github.com/modolanguage" class="btn buttonGoSpecification btn-large"><i class="ion-social-github"></i> <span>GitHub</span></a>
       </div>
     </div>
     <!-- Mobile Banner -->
     <div class="container center displayFlex black-text hide-on-med-and-up" id="divIndexMobileContainer">
       <div class="row">
-        <h1 id="h1Logo"><img src="assets/img/Modo.png" alt="MODO"></h1>
+        <h1 id="h1Logo"><img src="assets/img/modo.svg" alt="MODO"></h1>
         <span>MODO. Modelling language for everyone!</span>
       </div>
       <div class="row center">
         <a href="documentation.html" id="btnGoStart" class="btn btn-large">Get Started</a>
         <br><span style="margin: 0 10px;">&nbsp;</span><br>
-        <a href="documentation.html#sectionSpecification" id="btnGoSpecification" class="btn">Specification</a>
+        <a href="documentation.html#specification" id="btnGoSpecification" class="btn">Specification</a>
         <br><span style="margin: 0 10px;">&nbsp;</span><br>
-        <a target="_blank" href="documentation.html#sectionSpecification" id="btnGoSpecification" class="btn"><i class=""></i> GitHub</a>
+        <a target="_blank" href="documentation.html#specification" id="btnGoSpecification" class="btn"><i class=""></i> GitHub</a>
       </div>
     </div>
   </section>
@@ -97,28 +97,21 @@
       <div id="divWelcomeCodePreview">
         <ul id="sublime" style="opacity: 0 !important;">
           <li class="buttons"></li>
-          <li><span class="gray-code" style="font-style:italic">// XML (148 bytes)</span></li>
-          <li>&lt;<span class="red-code">class</span> <span class="orange-code">name</span><span class="white-text">=</span>
-            <span class="yellow-code">"Student"</span>&gt;</li>
+          <li><span class="gray-code">// XML (148 bytes)</span></li>
+          <li>&lt;<span class="red-code">class</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"Student"</span>&gt;</li>
             <ul class="tab">
-              <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span>
-                <span class="yellow-code">"FirstName"</span> <span class="blue-code">type</span><span class="white-text">=</span>
-                <span class="yellow-code">"String"</span>>&lt;
-                <span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
-                <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span>
-                  <span class="yellow-code">"LastName"</span> <span class="blue-code">type</span><span class="white-text">=</span>
-                  <span class="yellow-code">"String"</span>>&lt;
-                  <span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
-                </ul>
-                <li>&lt;<span class="">/</span><span class="red-code">class</span>></li>
+              <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"FirstName"</span> <span class="blue-code">type</span><span class="white-text">=</span><span class="yellow-code">"String"</span>>&lt;<span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
+              <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"LastName"</span> <span class="blue-code">type</span><span class="white-text">=</span><span class="yellow-code">"String"</span>>&lt;<span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
+            </ul>
+          <li>&lt;<span class="">/</span><span class="red-code">class</span>></li>
                 <li></li>
-                <li><span class="gray-code" style="font-style:italic">// MODO (63 bytes) </span><span class="cursor"></span></li>
-                <li><span class="red-code">Student</span> <span>=</span> { </li>
+                <li><span class="gray-code">// MODO (63 bytes) </span><span class="cursor"></span></li>
+                <li><span>Student</span> <span class="blue-code">{</span></li>
                 <ul class="tab">
-                  <li><span class="blue-code">FirstName</span> <span>=</span> <span> String</span><span>;</span></li>
-                  <li><span class="blue-code">LastName </span><span>=</span> String<span>;</span></li>
+                  <li><span>FirstName</span> <span class="blue-code">=</span> <span style="color:#67b8de;">String</span><span class="blue-code">;</span></li>
+                  <li><span>LastName</span> <span class="blue-code">=</span> <span style="color:#67b8de;">String</span><span class="blue-code">;</span></li>
                 </ul>
-                <li>}</li>
+                <li><span class="blue-code">}</span></li>
               </ul>
               <div class="card-panel white">
               </div>
@@ -137,13 +130,13 @@
               <p class="light">The simple syntax of Modo allows easy modeling for not only the IT professionals but also the professionals from
                 non-IT fields. The well-structured nature of Modo also allows direct conversion of the models to different programming
               languages and technologies, thus serving as a technology independent modeling method.</p>
-              <a href="documentation.html#sectionAbout" class="btn logoColor light">Learn More</a>
+              <a href="documentation.html#about" class="btn logoColor">Learn More...</a>
             </div>
           </div>
         </section>
         <!-- #Promotion Table End -->
         <!-- Download Section Starts -->
-        <section id="sectionHomeDownload" class="displayFlex">
+        <section id="download" class="displayFlex">
           <div class="container center">
             <div class="row">
               <h3 class="light">Download</h3>
@@ -153,40 +146,40 @@
                 <thead>
                   <tr>
                     <th>File Description</th>
-                    <th>File Type</th>
-                    <th>File Size</th>
-                    <th>Last Update</th>
-                    <th>Last Update</th>
+                    <th class="center-align">File Type</th>
+                    <th class="center-align">File Size</th>
+                    <th class="center-align">Last Update</th>
+                    <th class="center-align"></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>Modo Language Specification (English)</td>
-                    <td>PDF</td>
-                    <td>785 KB.</td>
-                    <td>Nov. 11, 2009</td>
-                    <td><a href="#!">Download</a></td>
+                    <td class="center-align">PDF</td>
+                    <td class="center-align">785 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Language.Specification.en.2009.11.10.pdf">Download</a></td>
                   </tr>
                   <tr>
                     <td>Modo Identity Guidelines</td>
-                    <td>PDF</td>
-                    <td>528 KB.</td>
-                    <td>Nov. 11, 2009</td>
-                    <td><a href="#!">Download</a></td>
+                    <td class="center-align">PDF</td>
+                    <td class="center-align">528 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Identity.Guidelines.en.2009.11.10.pdf">Download</a></td>
                   </tr>
                   <tr>
                     <td>Modo Logo (Vector Format)</td>
-                    <td>SVG</td>
-                    <td>118 KB.</td>
-                    <td>Nov. 11, 2009</td>
-                    <td><a href="#!">Download</a></td>
+                    <td class="center-align">SVG</td>
+                    <td class="center-align">118 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Logo.svg">Download</a></td>
                   </tr>
                   <tr>
                     <td>Modo Logo (Vector Format)</td>
-                    <td>EPS</td>
-                    <td>427 KB.</td>
-                    <td>Nov. 11, 2009</td>
-                    <td><a href="#!">Download</a></td>
+                    <td class="center-align">EPS</td>
+                    <td class="center-align">427 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Logo.eps">Download</a></td>
                   </tr>
 
                 </tbody>
@@ -196,33 +189,32 @@
         </section>
         <section id="sectionReadytoGo" class="displayFlex">
           <div class="container displayFlex alignedCenter">
-            <h1 class="light">Ready for some <img src="assets/img/Modo.png" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
-            <a href="documentation.html#sectionGetStarted" class="btn darkBlue light waves-effect waves-light">Get Started!</a>
+            <h1 class="light">Ready for some <img src="assets/img/modo.svg" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
+            <a href="documentation.html#get_started" class="btn logoColor waves-effect waves-light">Get Started!</a>
           </div>
         </section>
         <footer class="page-footer grey darken-3">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">MODO</h5>
-                <p class="grey-text text-lighten-4">Modelling language for everyone.</p>
+                <h5 class="white-text" style="opacity: 0.8;"><img src="assets/img/modo-white.svg" width="160" alt="MODO"></h5>
+                <p class="grey-text text-lighten-4">Modo. Modeling Language for Everyone!</p>
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3 light" href="http://www.modolanguage.org">Home</a></li>
-                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionAbout">About</a></li>
-                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionSpecification">Specification</a></li>
-                  <li><a class="grey-text text-lighten-3 light" href="#sectionHomeDownload">Downloads</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="index.html">Home</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#about">About</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#specification">Specification</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="#download">Downloads</a></li>
                   <li><a class="grey-text text-lighten-3 light" href="contact.html">Contact</a></li>
-                  <li><a class="grey-text text-lighten-3 bold" href="documentation.html#sectionGetStarted">Get Started!</a></li>
+                  <li><a class="grey-text text-lighten-3 bold" href="documentation.html#get_started">Get Started!</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-              © 2017 Copyright
+              Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a> International license.
             </div>
           </div>
         </footer>
