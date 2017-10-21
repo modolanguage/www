@@ -146,7 +146,9 @@ blockquote {
 #sectionIndexBanner .container .buttonGoSpecification {
   background: rgb(103, 184, 222);
 }
-
+#sectionIndexBanner #rowCodePreview {
+  box-sizing: border-box;
+}
 #sectionIndexBanner .container .buttonGoSpecification i,
 #sectionIndexBanner .container .buttonGoSpecification span {
   display: inline-block;
@@ -170,19 +172,26 @@ blockquote {
   opacity: 0;
   transition: all 1s;
   vertical-align: top;
-  margin-left: 30px;
-  margin-right: 30px;
+  padding: 30px;
+  margin: 0px;
 }
 #sectionIndexBanner .container #rowLogo {
   opacity: 0;
   transform: translateY(-15px);
   transition: all 1s;
+  box-sizing: border-box;
 }
-#rowLogo h2 {
+#rowLogo h2,
+#rowLogo h3 {
   font-size: 24px;
   font-weight: lighter;
   margin: 0px;
   color: #3399CC;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#rowLogo h3 {
+  font-size: 18px;
 }
 #sectionIndexBanner #mouse_scroll {
   position: absolute;
@@ -193,6 +202,8 @@ blockquote {
 }
 #sectionIndexBanner #rowBannerButtons {
   margin-bottom: 100px;
+  box-sizing: border-box;
+  text-align: center;
 }
 #mainDocumentation {
   position: relative;

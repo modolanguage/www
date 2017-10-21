@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
   <meta name="keywords" content="Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
@@ -47,12 +47,14 @@
   </nav>
   <!-- Index Banner Start -->
   <section id="sectionIndexBanner" class="displayFlex landing">
-    <div class="container displayFlex center black-text hide-on-small-only">
+    <div class="container displayFlex center black-text">
       <div class="row" id="rowLogo">
-        <h1><img src="assets/img/modo.svg" alt="MODO"></h1>
-        <h2>Modo. Modeling Language for Everyone!</h2>
+        <h1 class="hide-on-small-only"><img src="assets/img/modo.svg" alt="MODO"></h1>
+        <h2 class="hide-on-small-only">Modo. Modeling Language for Everyone!</h2>
+        <h1 class="hide-on-med-and-up"><img src="assets/img/modo.svg" width="280" alt="MODO"></h1>
+        <h3 class="hide-on-med-and-up">Modo. Modeling Language for Everyone!</h2>
       </div>
-      <div class="row" id="rowCodePreview">
+      <div class="row hide-on-small-only" id="rowCodePreview">
         <pre style="color:#3b3b3b">Instructor <span style="color:#069;font-weight:700">{</span>
           <span>FirstName</span> <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700">;</span>
           <span>LastName</span> <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700">;</span><br><span style="color:#069;font-weight:700">}</span>
@@ -62,25 +64,11 @@
         </pre>
       </div>
       <div class="row center" id="rowBannerButtons">
-        <a href="documentation.html#get_started" id="btnGoStart" class="btn btn-large">Get Started!</a>
-        <span style="margin: 0 5px;">&nbsp;</span>
-        <a href="documentation.html#specification" id="btnGoSpecification" class="btn buttonGoSpecification btn-large">Specification</a>
-        <span style="margin: 0 5px;">&nbsp;</span>
-        <a target="_blank" href="https://github.com/modolanguage" class="btn buttonGoSpecification btn-large"><i class="ion-social-github"></i> <span>GitHub</span></a>
-      </div>
-    </div>
-    <!-- Mobile Banner -->
-    <div class="container center displayFlex black-text hide-on-med-and-up" id="divIndexMobileContainer">
-      <div class="row">
-        <h1 id="h1Logo"><img src="assets/img/modo.svg" alt="MODO"></h1>
-        <span>MODO. Modelling language for everyone!</span>
-      </div>
-      <div class="row center">
-        <a href="documentation.html" id="btnGoStart" class="btn btn-large">Get Started</a>
-        <br><span style="margin: 0 10px;">&nbsp;</span><br>
-        <a href="documentation.html#specification" id="btnGoSpecification" class="btn">Specification</a>
-        <br><span style="margin: 0 10px;">&nbsp;</span><br>
-        <a target="_blank" href="documentation.html#specification" id="btnGoSpecification" class="btn"><i class=""></i> GitHub</a>
+        <div class="col s12">
+            <a href="documentation.html#get_started" id="btnGoStart" class="btn btn-large col l4 m4 s12">Get Started!</a>
+            <a href="documentation.html#specification" id="btnGoSpecification" class="btn buttonGoSpecification btn-large col l4 m4 s12">Specification</a>
+            <a target="_blank" href="https://github.com/modolanguage" class="btn buttonGoSpecification btn-large col l4 m4 s12"><i class="ion-social-github"></i> <span>GitHub</span></a>
+        </div>
       </div>
     </div>
   </section>
@@ -189,7 +177,7 @@
         </section>
         <section id="sectionReadytoGo" class="displayFlex">
           <div class="container displayFlex alignedCenter">
-            <h1 class="light">Ready for some <img src="assets/img/modo.svg" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
+            <h1 class="light center-align">Ready for some <img src="assets/img/modo.svg" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
             <a href="documentation.html#get_started" class="btn logoColor waves-effect waves-light">Get Started!</a>
           </div>
         </section>
@@ -197,7 +185,7 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text" style="opacity: 0.8;"><img src="assets/img/modo-white.svg" width="160" alt="MODO"></h5>
+                <h5 class="white-text" style="opacity: 0.8;"><img src="assets/img/modo-white.png" width="160" alt="MODO"></h5>
                 <p class="grey-text text-lighten-4">Modo. Modeling Language for Everyone!</p>
               </div>
               <div class="col l4 offset-l2 s12">
