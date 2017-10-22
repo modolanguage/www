@@ -1,277 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
   <meta name="keywords" content="Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
   <meta name="description" content="Modo is an easy to use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
   <meta name="author" content="Sanpark">
-  <meta property="og:title" content="Modo, Modeling Language for All">
-  <meta property="og:image" content="http://www.modolanguage.org/asts/imgs/facebooklogo.png">
-  <meta property="og:site_name" content="Modo, Modeling Language for All">
+  <meta property="og:title" content="Modo. Modeling Language for Everyone!">
+  <meta property="og:image" content="http://www.modolanguage.org/asts/img/facebooklogo.png">
+  <meta property="og:site_name" content="Modo. Modeling Language for Everyone!">
   <meta property="og:description" content="Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
-
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
-
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="assets/css/materialize.min.css">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/scroll.css">
-  
-
-  <title>Modo, Modeling Language for All</title>
+  <title>Modo. Modeling Language for Everyone!</title>
 </head>
-
 <body>
   <nav id="navbarFixed" class="white">
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo light-blue-text"><img src="assets/img/Modo.png" alt="Modo"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+      <a href="index.html" class="brand-logo light-blue-text hide-on-med-and-down"><img src="assets/img/modo.svg" alt="Modo"></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionAbout">About</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionSpecification">Specification</a></li>
-        <li><a class="grey-text" href="#sectionHomeDownload">Downloads</a></li>
+        <li><a class="grey-text active" href="index.html">Home</a></li>
+        <li><a class="grey-text" href="documentation.html#about">About</a></li>
+        <li><a class="grey-text" href="documentation.html#specification">Specification</a></li>
         <li><a class="grey-text" href="contact.html">Contact</a></li>
-        <li><a class="blue-text text-lighten-1 white" href="documentation.html#sectionGetStarted"><i class="material-icons left">open_in_new</i>Get Started!</a></li>
+        <li><a class="aGetStarted" href="documentation.html#get_started">Get Started!</a></li>
+        <li><a target="_blank" class="grey-text" href="https://github.com/modolanguage"><i class="ion-social-github"></i></a></li>
       </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionAbout">About</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionSpecification">Specification</a></li>
-        <li><a class="grey-text" href="#sectionHomeDownload">Downloads</a></li>
+      <ul class="side-nav hide-on-large-only" id="mobile-demo">
+        <li><a class="grey-text active" href="index.html">Home</a></li>
+        <li><a class="grey-text" href="documentation.html#about">About</a></li>
+        <li><a class="grey-text" href="documentation.html#specification">Specification</a></li>
         <li><a class="grey-text" href="contact.html">Contact</a></li>
-        <li><a id="btnQuickstart" class="btn light-green accent-4 white-text" href="documentation.html#sectionGetStarted"><i class="material-icons left white-text">open_in_new</i>Get Started!</a></li>
+        <li><a id="btnQuickstart" class="aGetStarted" href="documentation.html#get_started">Get Started!</a></li>
+        <li><a target="_blank" class="grey-text" href="https://github.com/modolanguage"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
       </ul>
     </div>
   </nav>
   <!-- Index Banner Start -->
   <section id="sectionIndexBanner" class="displayFlex landing">
-    <div class="container displayFlex center black-text hide-on-small-only">
+    <div class="container displayFlex center black-text">
       <div class="row" id="rowLogo">
-        <h1><img src="assets/img/Modo.png" alt="MODO"></h1>
-        <span>Modo. Modelling language for everyone!</span>
+        <h1 class="hide-on-small-only"><img src="assets/img/modo.svg" alt="MODO"></h1>
+        <h2 class="hide-on-small-only">Modo. Modeling Language for Everyone!</h2>
+        <h1 class="hide-on-med-and-up"><img src="assets/img/modo.svg" width="280" alt="MODO"></h1>
+        <h3 class="hide-on-med-and-up">Modo. Modeling Language for Everyone!</h2>
       </div>
-      <div class="row" id="rowCodePreview">
-        <pre style="color:#3b3b3b"><span class="red-code" style="font-weight:700">type</span> Project {
-  <span style="color: #3399CC">name</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">tagline</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">contributors</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">[User]</span><br>}
-          </pre>
-        <pre style="color:#3b3b3b"><span class="red-code" style="font-weight:700">type</span> Project {
-  <span style="color: #3399CC">name</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">tagline</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">contributors</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">[User]</span><br>}
-          </pre>
-        <pre style="color:#3b3b3b"><span class="red-code" style="font-weight:700">type</span> Project {
-  <span style="color: #3399CC">name</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">tagline</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">String</span>
-  <span style="color: #3399CC">contributors</span><span style="color:#069;font-weight:700">:</span> <span class="yellow-code">[User]</span><br>}
-          </pre>
-
+      <div class="row hide-on-small-only" id="rowCodePreview">
+        <pre style="color:#3b3b3b">Instructor <span style="color:#069;font-weight:700">{</span>
+          <span>FirstName</span> <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700">;</span>
+          <span>LastName</span> <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700">;</span><br><span style="color:#069;font-weight:700">}</span>
+        </pre>
+        <pre style="color:#3b3b3b">Advisor <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700">{</span>
+          <span>OfficeDay</span> <span style="color:#069;font-weight:700">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700">;</span><br><span style="color:#069;font-weight:700">}</span>
+        </pre>
       </div>
       <div class="row center" id="rowBannerButtons">
-        <a href="documentation.html#sectionGetStarted" id="btnGoStart" class="btn btn-large light">Get Started</a>
-        <span style="margin: 0 10px;">or see</span>
-        <a href="documentation.html#sectionSpecification" id="btnGoSpecification" class="btn btn-large light">Specification</a>
+        <div class="col s12 l4 m4">
+            <a href="documentation.html#get_started" id="btnGoStart" class="aBannerButtons btn btn-large">Get Started!</a>
+        </div>
+        <div class="col s12 l4 m4">
+            <a href="documentation.html#specification" id="btnGoSpecification" class="aBannerButtons btn buttonGoSpecification btn-large">Specification</a>
+        </div>
+        <div class="col s12 l4 m4">
+            <a target="_blank" href="https://github.com/modolanguage" class="aBannerButtons btn buttonGoSpecification btn-large"><i class="ion-social-github"></i> <span>GitHub</span></a>
+        </div>
+        </div>
       </div>
     </div>
-
-    <!-- Mobile Banner -->
-    <div class="container center displayFlex black-text hide-on-med-and-up" id="divIndexMobileContainer">
-      <div class="row">
-        <h1 id="h1Logo"><img src="assets/img/Modo.png" alt="MODO"></h1>
-        <span>MODO. Modelling language for everyone!</span>
-      </div>
-      <div class="row center">
-        <a href="documentation.html" id="btnGoStart" class="btn btn-large">Get Started</a>
-        <br><span style="margin: 0 10px;">or see</span><br>
-        <a href="documentation.html#sectionSpecification" id="btnGoSpecification" class="btn">Specification</a>
-      </div>
-    </div>
-    <!-- <div id="mouse_scroll">
-      <div class="mouse">
-        <div class="wheel"></div>
-      </div>
-      <div>
-        <span class="m_scroll_arrows unu"></span>
-        <span class="m_scroll_arrows doi"></span>
-        <span class="m_scroll_arrows trei"></span>
-      </div>
-    </div> -->
   </section>
   <!-- #Index Banner End -->
-
   <!-- Section Welcome Start -->
   <section id="sectionWelcome" class="displayFlex alignedCenter black-text">
     <div class="container displayFlex alignedCenter">
       <div id="divWelcomeText">
         <h1 class="light">Welcome!</h1>
         <p class="light">Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems
-          and environment.</p>
+        and environment.</p>
       </div>
       <!-- Code preview card -->
       <div id="divWelcomeCodePreview">
         <ul id="sublime" style="opacity: 0 !important;">
           <li class="buttons"></li>
-
-          <li><span class="gray-code" style="font-style:italic">// XML (148 bytes)</span></li>
-          <li>&lt;<span class="red-code">class</span> <span class="orange-code">name</span><span class="white-text">=</span>
-            <span class="yellow-code">"Student"</span>&gt;</li>
-          <ul class="tab">
-            <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span>
-              <span class="yellow-code">"FirstName"</span> <span class="blue-code">type</span><span class="white-text">=</span>
-              <span class="yellow-code">"String"</span>>&lt;
-              <span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
-            <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span>
-              <span class="yellow-code">"LastName"</span> <span class="blue-code">type</span><span class="white-text">=</span>
-              <span class="yellow-code">"String"</span>>&lt;
-              <span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
-          </ul>
+          <li><span class="gray-code">// XML (148 bytes)</span></li>
+          <li>&lt;<span class="red-code">class</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"Student"</span>&gt;</li>
+            <ul class="tab">
+              <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"FirstName"</span> <span class="blue-code">type</span><span class="white-text">=</span><span class="yellow-code">"String"</span>>&lt;<span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
+              <li>&lt;<span class="blue-code">property</span> <span class="orange-code">name</span><span class="white-text">=</span><span class="yellow-code">"LastName"</span> <span class="blue-code">type</span><span class="white-text">=</span><span class="yellow-code">"String"</span>>&lt;<span class="white-text">/</span><span class="blue-code">property</span>&gt;</li>
+            </ul>
           <li>&lt;<span class="">/</span><span class="red-code">class</span>></li>
-          <li></li>
-          <li><span class="gray-code" style="font-style:italic">// MODO (63 bytes) </span><span class="cursor"></span></li>
-          <li><span class="red-code">Student</span> <span>=</span> { </li>
-          <ul class="tab">
-            <li><span class="blue-code">FirstName</span> <span>=</span> <span> String</span><span>;</span></li>
-            <li><span class="blue-code">LastName </span><span>=</span> String<span>;</span></li>
-          </ul>
-          <li>}</li>
-        </ul>
+                <li></li>
+                <li><span class="gray-code">// MODO (63 bytes) </span><span class="cursor"></span></li>
+                <li><span>Student</span> <span class="blue-code">{</span></li>
+                <ul class="tab">
+                  <li><span>FirstName</span> <span class="blue-code">=</span> <span style="color:#67b8de;">String</span><span class="blue-code">;</span></li>
+                  <li><span>LastName</span> <span class="blue-code">=</span> <span style="color:#67b8de;">String</span><span class="blue-code">;</span></li>
+                </ul>
+                <li><span class="blue-code">}</span></li>
+              </ul>
+              <div class="card-panel white">
+              </div>
+            </div>
+            <!-- #Code preview card END-->
+          </div>
+        </section>
+        <!-- #Section Welcome END -->
+        <!-- Promotion Table Start -->
+        <section id="sectionPromotionTable" class="displayFlex alignedCenter">
+          <div class="container center white-text">
+            <div class="row">
+              <h3 class="light">About MODO</h3>
+            </div>
+            <div class="row">
+              <p class="light">The simple syntax of Modo allows easy modeling for not only the IT professionals but also the professionals from
+                non-IT fields. The well-structured nature of Modo also allows direct conversion of the models to different programming
+              languages and technologies, thus serving as a technology independent modeling method.</p>
+              <a href="documentation.html#about" class="btn logoColor">Learn More...</a>
+            </div>
+          </div>
+        </section>
+        <!-- #Promotion Table End -->
+        <!-- Download Section Starts -->
+        <section id="download" class="displayFlex">
+          <div class="container center">
+            <div class="row">
+              <h3 class="light">Download</h3>
+            </div>
+            <div class="row displayFlex">
+              <table class="responsive-table highlight">
+                <thead>
+                  <tr>
+                    <th>File Description</th>
+                    <th class="center-align">File Type</th>
+                    <th class="center-align">File Size</th>
+                    <th class="center-align">Last Update</th>
+                    <th class="center-align"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Modo Language Specification (English)</td>
+                    <td class="center-align">PDF</td>
+                    <td class="center-align">785 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Language.Specification.en.2009.11.10.pdf">Download</a></td>
+                  </tr>
+                  <tr>
+                    <td>Modo Identity Guidelines</td>
+                    <td class="center-align">PDF</td>
+                    <td class="center-align">528 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Identity.Guidelines.en.2009.11.10.pdf">Download</a></td>
+                  </tr>
+                  <tr>
+                    <td>Modo Logo (Vector Format)</td>
+                    <td class="center-align">SVG</td>
+                    <td class="center-align">118 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Logo.svg">Download</a></td>
+                  </tr>
+                  <tr>
+                    <td>Modo Logo (Vector Format)</td>
+                    <td class="center-align">EPS</td>
+                    <td class="center-align">427 KB.</td>
+                    <td class="center-align">Nov. 11, 2009</td>
+                    <td class="center-align"><a target="_blank" href="download/Modo.Logo.eps">Download</a></td>
+                  </tr>
 
-        <div class="card-panel white">
-        </div>
-      </div>
-      <!-- #Code preview card END-->
-    </div>
-  </section>
-  <!-- #Section Welcome END -->
-
-  <!-- Promotion Table Start -->
-  <section id="sectionPromotionTable" class="displayFlex alignedCenter">
-    <div class="container center white-text">
-      <div class="row">
-        <h3 class="light">About MODO</h3>
-      </div>
-      <div class="row">
-        <p class="light">The simple syntax of Modo allows easy modeling for not only the IT professionals but also the professionals from
-          non-IT fields. The well-structured nature of Modo also allows direct conversion of the models to different programming
-          languages and technologies, thus serving as a technology independent modeling method.</p>
-        <a href="documentation.html#sectionAbout" class="btn logoColor light">Learn More</a>
-      </div>
-    </div>
-  </section>
-  <!-- #Promotion Table End -->
-
-  <!-- Download Section Starts -->
-  <section id="sectionHomeDownload" class="displayFlex">
-    <div class="container center">
-      <div class="row">
-        <h3 class="light">Download</h3>
-      </div>
-      <div class="row displayFlex">
-        <!-- <i class="material-icons">get_app</i> -->
-        <!-- <svg width="144" height="144" viewBox="0 0 144 144" class="icon icon-serverstack-virtual stroked" id="svgDownload">
-          <path class="long" d="m 101.7,41.83 -58.76,0 m 58.76,16.25 -58.76,0 m 58.76,16.35 -58.76,0 m 58.76,16.2 -58.76,0 m 0,-49.01 11.02,-5 36.75,0 10.99,5 0,65.18 -58.76,0 z"
-          />
-          <path class="short" d="m 53.42,98.63 c 0,0.4 0.34,0.8 0.75,0.8 0.42,0 0.75,-0.4 0.75,-0.8 0,-0.4 -0.33,-0.7 -0.75,-0.7 -0.41,0 -0.75,0.3 -0.75,0.7 z m -3.32,0 c 0,0.4 -0.34,0.8 -0.75,0.8 -0.42,0 -0.75,-0.4 -0.75,-0.8 0,-0.4 0.33,-0.7 0.75,-0.7 0.41,0 0.75,0.3 0.75,0.7 z m 37.21,-4.2 3.3,0 0,8.47 -3.3,0 z m 9.5,0 -3.3,0 0,8.47 3.3,0 z M 53.42,82.53 c 0,0.4 0.34,0.7 0.75,0.7 0.42,0 0.75,-0.3 0.75,-0.7 0,-0.5 -0.33,-0.8 -0.75,-0.8 -0.41,0 -0.75,0.3 -0.75,0.8 z m -3.32,0 c 0,0.4 -0.34,0.7 -0.75,0.7 -0.42,0 -0.75,-0.3 -0.75,-0.7 0,-0.5 0.33,-0.8 0.75,-0.8 0.41,0 0.75,0.3 0.75,0.8 z m 37.21,-4.3 3.3,0 0,8.5 -3.3,0 z m 9.5,0 -3.3,0 0,8.5 3.3,0 z m -43.39,-12 c 0,0.4 0.34,0.7 0.75,0.7 0.42,0 0.75,-0.3 0.75,-0.7 0,-0.4 -0.33,-0.8 -0.75,-0.8 -0.41,0 -0.75,0.4 -0.75,0.8 z m -3.32,0 c 0,0.4 -0.34,0.7 -0.75,0.7 -0.42,0 -0.75,-0.3 -0.75,-0.7 0,-0.4 0.33,-0.8 0.75,-0.8 0.41,0 0.75,0.4 0.75,0.8 z m 37.21,-4.29 3.3,0 0,8.59 -3.3,0 z m 9.5,0 -3.3,0 0,8.59 3.3,0 z M 53.42,49.95 c 0,0.41 0.34,0.75 0.75,0.75 0.42,0 0.75,-0.34 0.75,-0.75 0,-0.41 -0.33,-0.75 -0.75,-0.75 -0.41,0 -0.75,0.34 -0.75,0.75 z m -3.32,0 c 0,0.41 -0.34,0.75 -0.75,0.75 -0.42,0 -0.75,-0.34 -0.75,-0.75 0,-0.41 0.33,-0.75 0.75,-0.75 0.41,0 0.75,0.34 0.75,0.75 z m 37.21,-4.26 3.3,0 0,8.52 -3.3,0 z m 9.5,0 -3.3,0 0,8.52 3.3,0 z"
-          />
-          <path class="virtual" d="m 53.97,32.5 a 4.105,4.105 0 0 0 -1.69,0.38 l -11.03,5 a 4.105,4.105 0 0 0 -2.41,3.74 l 0,65.18 a 4.105,4.105 0 0 0 4.1,4.1 l 58.76,0 a 4.105,4.105 0 0 0 4.1,-4.1 l 0,-65.18 a 4.105,4.105 0 0 0 -2.4,-3.74 l -10.99,-5 a 4.105,4.105 0 0 0 -1.7,-0.38 l -36.74,0 z"
-          />
-        </svg> -->
-        <table class="responsive-table highlight">
-          <thead>
-            <tr>
-              <th>File Description</th>
-              <th>File Type</th>
-              <th>File Size</th>
-              <th>Last Update</th>
-              <th>Last Update</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Modo Language Specification (English)</td>
-              <td>PDF</td>
-              <td>785 KB.</td>
-              <td>Nov. 11, 2009</td>
-              <td><a href="#!">Download</a></td>
-            </tr>
-            <tr>
-              <td>Modo Identity Guidelines</td>
-              <td>PDF</td>
-              <td>528 KB.</td>
-              <td>Nov. 11, 2009</td>
-              <td><a href="#!">Download</a></td>
-            </tr>
-            <tr>
-              <td>Modo Logo (Vector Format)</td>
-              <td>SVG</td>
-              <td>118 KB.</td>
-              <td>Nov. 11, 2009</td>
-              <td><a href="#!">Download</a></td>
-            </tr>
-            <tr>
-              <td>Modo Logo (Vector Format)</td>
-              <td>EPS</td>
-              <td>427 KB.</td>
-              <td>Nov. 11, 2009</td>
-              <td><a href="#!">Download</a></td>
-            </tr>
-
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <section id="sectionReadytoGo" class="displayFlex">
-    <div class="container displayFlex alignedCenter">
-      <h1 class="light">Ready for some <img src="assets/img/Modo.png" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
-      <a href="documentation.html#sectionGetStarted" class="btn darkBlue light waves-effect waves-light">Get Started!</a>
-    </div>
-  </section>
-
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">MODO</h5>
-          <p class="grey-text text-lighten-4">Modelling language for everyone.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3 light" href="http://www.modolanguage.org">Home</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionAbout">About</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionSpecification">Specification</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="#sectionHomeDownload">Downloads</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="contact.html">Contact</a></li>
-            <li><a class="grey-text text-lighten-3 bold" href="documentation.html#sectionGetStarted">Get Started!</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2017 Copyright
-      </div>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-  <script src="assets/js/materialize.min.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
-</html>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section id="sectionReadytoGo" class="displayFlex">
+          <div class="container displayFlex alignedCenter">
+            <h1 class="light center-align">Ready for some <img src="assets/img/modo.svg" alt="modo programming language" id="imgInlineTextLogo"> ?</h1>
+            <a href="documentation.html#get_started" class="btn logoColor waves-effect waves-light">Get Started!</a>
+          </div>
+        </section>
+        <footer class="page-footer grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text" style="opacity: 0.8;"><img src="assets/img/modo-white.png" width="160" alt="MODO"></h5>
+                <p class="grey-text text-lighten-4">Modo. Modeling Language for Everyone!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <ul>
+                  <li><a class="grey-text text-lighten-3 light" href="index.html">Home</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#about">About</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="documentation.html#specification">Specification</a></li>
+                  <li><a class="grey-text text-lighten-3 light" href="contact.html">Contact</a></li>
+                  <li><a class="grey-text text-lighten-3 bold" href="documentation.html#get_started">Get Started!</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a> International license.
+            </div>
+          </div>
+        </footer>
+        <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+        <script src="assets/js/materialize.min.js"></script>
+        <script src="assets/js/main.js"></script>
+      </body>
+      </html>

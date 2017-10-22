@@ -139,13 +139,25 @@ blockquote {
   width: auto;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
 }
 #sectionIndexBanner .container #btnGoStart {
-  background: #3399CC;
+  background: rgb(51, 153, 204);
 }
-#sectionIndexBanner .container #btnGoSpecification {
-  background: #135B7F;
+#sectionIndexBanner .container .buttonGoSpecification {
+  background: rgb(103, 184, 222);
 }
+#sectionIndexBanner #rowCodePreview {
+  box-sizing: border-box;
+}
+#sectionIndexBanner .container .buttonGoSpecification i,
+#sectionIndexBanner .container .buttonGoSpecification span {
+  display: inline-block;
+  float: none;
+  overflow: hidden;
+}
+
 #sectionIndexBanner .container h1 {
   height: 4em;
   margin-bottom: 0 !important;
@@ -153,22 +165,35 @@ blockquote {
 #sectionIndexBanner .container h1 img {
   height: 100%;
 }
-#sectionIndexBanner .container h1 + span {
-  color: #3399CC;
-}
 #sectionIndexBanner .container pre {
   display: inline-block;
   background: transparent;
   text-align: left;
-  font-size: 1.3em;
+  font-size: 1.2em;
   transform: translateY(15px);
   opacity: 0;
   transition: all 1s;
+  vertical-align: top;
+  padding: 30px;
+  margin: 0px;
 }
 #sectionIndexBanner .container #rowLogo {
   opacity: 0;
   transform: translateY(-15px);
   transition: all 1s;
+  box-sizing: border-box;
+}
+#rowLogo h2,
+#rowLogo h3 {
+  font-size: 24px;
+  font-weight: lighter;
+  margin: 0px;
+  color: #3399CC;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#rowLogo h3 {
+  font-size: 18px;
 }
 #sectionIndexBanner #mouse_scroll {
   position: absolute;
@@ -177,7 +202,27 @@ blockquote {
   transform: translateX(-50%) scale(0.8);
   z-index: 999 !important;
 }
-
+#sectionIndexBanner #rowBannerButtons {
+  margin-bottom: 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
+#navbarFixed .aGetStarted {
+  background: rgb(51, 153, 204);
+  color: #fff;
+}
+#navbarFixed .aMobileMenuButton {
+  color: rgb(51, 153, 204);
+  line-height: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin:0px;
+}
+#rowBannerButtons .aBannerButtons {
+  display: block;
+  margin-bottom: 10px;
+}
 #mainDocumentation {
   position: relative;
 }
@@ -462,4 +507,8 @@ form button {
   text-align: left !important;
 }
 
+.footer-copyright .container a {
+  text-decoration: underline;
+  color: #f9f9f9;
+}
 /*# sourceMappingURL=style.css.map */

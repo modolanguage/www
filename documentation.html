@@ -3,29 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
   <meta name="keywords" content="Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
   <meta name="description" content="Modo is an easy to use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
   <meta name="author" content="Sanpark">
-  <meta property="og:title" content="Modo, Modeling Language for All">
+  <meta property="og:title" content="Modo. Modeling Language for Everyone!">
   <meta property="og:image" content="http://www.modolanguage.org/asts/imgs/facebooklogo.png">
-  <meta property="og:site_name" content="Modo, Modeling Language for All">
+  <meta property="og:site_name" content="Modo. Modeling Language for Everyone!">
   <meta property="og:description" content="Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
-  
+
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
-
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="assets/css/materialize.min.css">
-
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <title>Modo, Modeling Language for All</title>
+  <title>Modo. Modeling Language for Everyone!</title>
 </head>
 
 <body>
@@ -35,7 +31,7 @@
       <li><a href="index.html" class="brand-logo" id="aLogo"><img src="assets/img/Modo.png" alt=""></a></li>
       <!-- Get Started -->
       <li class="no-padding bold">
-        <a href="#!" class="collapsible-header active" id="aGetStarted"><i class="material-icons left">open_in_new</i>Get Started</a>
+        <a href="#!" class="collapsible-header active" id="aGetStarted"><i class="ion-android-open left"></i>Get Started</a>
         <div class="collapsible-body">
           <ul class="ulSubCategory table-of-contents">
             <li><a href="#divUnderstandTheSystem" class="js-trigger waves-effect">Understand the System</a></li>
@@ -49,7 +45,7 @@
       </li>
       <!-- About -->
       <li class="no-padding bold">
-        <a href="#!" class="collapsible-header" id="aAbout"><i class="material-icons left">info_outline</i>About</a>
+        <a href="#!" class="collapsible-header" id="aAbout"><i class="ion-ios-information-outline left"></i>About</a>
         <div class="collapsible-body">
           <ul class="ulSubCategory table-of-contents">
             <li><a href="#divAboutMotivation" class="waves-effect js-trigger">Motivation</a></li>
@@ -65,7 +61,7 @@
       <!-- #About End -->
       <!-- Documentation Start -->
       <li class="no-padding bold">
-        <a href="#!" class="collapsible-header" id="aSpecification"><i class="material-icons left">folder_open</i>Specifications</a>
+        <a href="#!" class="collapsible-header" id="aSpecification"><i class="ion-ios-folder-outline left"></i>Specifications</a>
         <div class="collapsible-body">
           <ul class="ulSubCategory table-of-contents">
             <li><a href="#divIntroduction" class="waves-effect js-trigger">Introduction</a></li>
@@ -84,17 +80,17 @@
       <!-- Contact -->
       <!-- <li><a id="btnContact" class="center white-text waves-effect js-trigger" href="#sectionContact">Contact</a></li> -->
     </ul>
-    
+
     <!-- Mobile SideNav -->
     <div id="divMobileSideNav" class="navbar-fixed hide-on-large-only">
       <nav class="white">
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-android-menu black-text"></i></a>
         <a href="index.html" class="brand-logo light-blue-text"><img src="assets/img/Modo.png" alt="Modo"></a>
         <ul id="mobile-demo" class="side-nav collapsible" data-collapsible="accordion">
           <!-- <li style="display: grid;"><a href="index.html" id="aLogo" class="brand-logo" style="position: relative;"><img src="assets/img/Modo.png" alt=""></a></li> -->
           <!-- Get Started -->
           <li class="no-padding bold">
-            <a href="#!" class="collapsible-header active" id="aGetStarted"><i class="material-icons left">open_in_new</i>Get Started</a>
+            <a href="#!" class="collapsible-header active" id="aGetStarted"><i class="ion-android-open left"></i>Get Started</a>
             <div class="collapsible-body">
               <ul class="ulSubCategory table-of-contents">
                 <li><a href="#divUnderstandTheSystem" class="js-trigger waves-effect">Understand the System</a></li>
@@ -108,7 +104,7 @@
           </li>
           <!-- About -->
           <li class="no-padding bold">
-            <a href="#!" class="collapsible-header" id="aAbout"><i class="material-icons left">info_outline</i>About</a>
+            <a href="#!" class="collapsible-header" id="aAbout"><i class="ion-ios-information-outline left"></i>About</a>
             <div class="collapsible-body">
               <ul class="ulSubCategory table-of-contents">
                 <li><a href="#divAboutMotivation" class="waves-effect js-trigger">Motivation</a></li>
@@ -124,7 +120,7 @@
           <!-- #About End -->
           <!-- Documentation Start -->
           <li class="no-padding bold">
-            <a href="#!" class="collapsible-header" id="aSpecification"><i class="material-icons left">folder_open</i>Specifications</a>
+            <a href="#!" class="collapsible-header" id="aSpecification"><i class="ion-android-folder-open left"></i>Specifications</a>
             <div class="collapsible-body">
               <ul class="ulSubCategory table-of-contents">
                 <li><a href="#divIntroduction" class="waves-effect js-trigger">Introduction</a></li>
@@ -215,13 +211,13 @@ Course{
       ID = Number;
       GPA = Number;
   }
-  
+
   Instructor {
       Name = String;
       Surname = String;
       ID = Number;
   }
-  
+
   Course {
       Name = String;
       ID = Number;
@@ -660,7 +656,7 @@ Student {
       <span style="color:#0053ff;font-weight:700">$Name</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"Doe Software Inc."</span>;
       Founder <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$Founder</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"John Doe"</span>;
-      TaxNumber <span style="color:#069;font-weight:700">=</span> String; 
+      TaxNumber <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$TaxNumber</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"123456789987654321"</span>;
   }
                   </pre>
@@ -692,7 +688,7 @@ Student {
           <p>Following is the general Extended BNF notation of the Modo:</p>
           <div class="divCodePreview">
             <code>
-                <pre style="background:#fff;color:#3b3b3b">modo <span style="color:#069;font-weight:700">=</span> { 
+                <pre style="background:#fff;color:#3b3b3b">modo <span style="color:#069;font-weight:700">=</span> {
     directive | rule | declaration | comment
   };
                 </pre>
@@ -707,7 +703,7 @@ Student {
   directive = {blank}, at symbol, identifier,
           {blank}<span style="color:#069;font-weight:700">-</span>, expression, {blank},
           <span style="color:#069;font-weight:700">end</span> sentence symbol;
-                  
+
   (<span style="color:#069;font-weight:700">* </span>Rule Definition<span style="color:#069;font-weight:700"> *</span>)
   rule = {blank}, at symbol, {blank},
           <span style="color:#069;font-weight:700">start</span> group symbol, {blank},
@@ -715,11 +711,11 @@ Student {
           {blank}, <span style="color:#069;font-weight:700">start</span> declaration symbol,
           {blank}, modo, {blank},
           <span style="color:#069;font-weight:700">end</span> declaration symbol;
-                  
+
   (<span style="color:#069;font-weight:700">* </span>Comment Definition<span style="color:#069;font-weight:700"> *</span>)
   comment = delimited comment
   <span style="color:#069;font-weight:700">        | </span><span style="color:#ff5600">single</span> line comment;
-                  
+
   (<span style="color:#069;font-weight:700">* </span>Declaration Definition<span style="color:#069;font-weight:700"> *</span>)
   declaration = {
       assignment
@@ -741,9 +737,9 @@ Student {
          | "g" | <span style="color:#666">"h"</span> | "i" | <span style="color:#666">"j"</span> | "k" | <span style="color:#666">"l"</span> | "m" | <span style="color:#666">"n"</span>
          | "o" | <span style="color:#666">"p"</span> | "q" | <span style="color:#666">"r"</span> | "s" | <span style="color:#666">"t"</span> | "u" | <span style="color:#666">"v"</span>
          | "w" | <span style="color:#666">"x"</span> | "y" | <span style="color:#666">"z"</span>;
-          
+
   <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">=</span> any Unicode <span style="color:#45ae34;font-weight:700">character</span>;
-          
+
   whitespace <span style="color:#069;font-weight:700">=</span> {
       space <span style="color:#45ae34;font-weight:700">character</span>
       | tab <span style="color:#45ae34;font-weight:700">character</span>
@@ -751,13 +747,13 @@ Student {
       | carriage return <span style="color:#45ae34;font-weight:700">character</span>
       | form feed <span style="color:#45ae34;font-weight:700">character</span>
   };
-          
+
   new line <span style="color:#069;font-weight:700">=</span> carriage return <span style="color:#45ae34;font-weight:700">character</span>
       | line feed <span style="color:#45ae34;font-weight:700">character</span>
       | next line <span style="color:#45ae34;font-weight:700">character</span>
       | line separator <span style="color:#45ae34;font-weight:700">character</span>
       | <span style="color:#45ae34;font-weight:700">paragraph</span> separator <span style="color:#45ae34;font-weight:700">character</span>;
-          
+
   space <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">" "</span>;
   tab <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">=</span>
           ? <span style="color:#069;font-weight:700">The</span> Unicode Standard Tab <span style="color:#45ae34;font-weight:700">Character</span> (U<span style="color:#069;font-weight:700">+</span><span style="color:#a8017e">0009</span>) ? ;
@@ -776,10 +772,10 @@ Student {
   <span style="color:#45ae34;font-weight:700">paragraph</span> separator <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">=</span>
           ? <span style="color:#069;font-weight:700">The</span> Unicode Standard
           <span style="color:#45ae34;font-weight:700">Paragraph</span> Separator <span style="color:#45ae34;font-weight:700">Character</span> (U<span style="color:#069;font-weight:700">+</span><span style="color:#a8017e">2029</span>) ? ;
-          
+
   digit <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"0"</span> | "1" | <span style="color:#666">"2"</span> | "3" | <span style="color:#666">"4"</span> | "5" | <span style="color:#666">"6"</span> | <span style="color:#666">"7"</span>
           | "8" | <span style="color:#666">"9"</span>;
-          
+
   <span style="color:#069;font-weight:700">at</span> symbol <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"@"</span>;
   assignment symbol <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"="</span>;
   <span style="color:#069;font-weight:700">end</span> sentence symbol <span style="color:#069;font-weight:700">=</span> <span style="color:#666">";"</span>;
@@ -878,7 +874,7 @@ Student {
       <span style="color:#0053ff;font-weight:700">$Name</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"Doe\'s Software Inc."</span>;
       Founder <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$Founder</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"John Doe"</span>;
-      TaxNumber <span style="color:#069;font-weight:700">=</span> String; 
+      TaxNumber <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$TaxNumber</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"123456789987654321"</span>;
   }             </pre>
               </code>
@@ -898,7 +894,7 @@ Student {
             <code>
                 <pre style="background:#fff;color:#3b3b3b">
   escaped single quote symbol <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"\'"</span>;
-                  
+
   escaped double quote symbol <span style="color:#069;font-weight:700">=</span> '\<span style="color:#666">"';</span></pre>
               </code>
           </div>
@@ -916,12 +912,12 @@ Student {
       double quote escaped <span style="color:#a535ae">string</span>,
       double quote symbol
   );
-                  
+
   single quote escaped <span style="color:#a535ae">string</span> <span style="color:#069;font-weight:700">=</span> {
           (any Unicode <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">-</span> single quote symbol)
           | escaped single quote symbol
   };
-                  
+
   double quote escaped <span style="color:#a535ae">string</span> <span style="color:#069;font-weight:700">=</span> {
           (any Unicode <span style="color:#45ae34;font-weight:700">character</span> <span style="color:#069;font-weight:700">-</span> double quote symbol)
           | escaped double quote symbol
@@ -936,9 +932,9 @@ Student {
           <div class="divCodePreview">
             <code>
                 <pre style="background:#fff;color:#3b3b3b">(<span style="color:#069;font-weight:700">* </span>Directive Definition<span style="color:#069;font-weight:700"> *</span>)
-  
+
   directive = {blank},
-          at symbol,              
+          at symbol,
           identifier,
           {blank}<span style="color:#069;font-weight:700">-</span>,
           expression,
@@ -1009,7 +1005,7 @@ Student {
       Founder = String<span style="color:#069;font-weight:700">;</span>
       <span style="color:#0053ff;font-weight:700">$Founder</span> = <span style="color:#666">"John Doe"</span><span style="color:#069;font-weight:700">;</span>
       TaxNumber = String<span style="color:#069;font-weight:700">;</span>
-      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>  
+      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>
   }
                 </pre>
               </code>
@@ -1025,13 +1021,13 @@ Student {
                 <pre style="background:#fff;color:#3b3b3b">Company {
       Name = String<span style="color:#069;font-weight:700">;</span>
       Founder = String<span style="color:#069;font-weight:700">;</span>
-      TaxNumber = String<span style="color:#069;font-weight:700">;</span> 
+      TaxNumber = String<span style="color:#069;font-weight:700">;</span>
       <span style="color:#0053ff;font-weight:700">$Name</span> = <span style="color:#666">"Doe Software Inc."</span><span style="color:#069;font-weight:700">;</span>
       @ (<span style="color:#0053ff;font-weight:700">$CurrentYear</span> <span style="color:#069;font-weight:700">></span> 2008) {
           <span style="color:#0053ff;font-weight:700">$Name</span> = <span style="color:#666">"DOE Corp."</span><span style="color:#069;font-weight:700">;</span>
       }
       <span style="color:#0053ff;font-weight:700">$Founder</span> = <span style="color:#666">"John Doe"</span><span style="color:#069;font-weight:700">;</span>
-      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>  
+      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>
   }
                 </pre>
               </code>
@@ -1051,10 +1047,10 @@ Student {
                 <pre style="background:#fff;color:#3b3b3b">Company {
       Name = String<span style="color:#069;font-weight:700">;</span>
       Founder = String<span style="color:#069;font-weight:700">;</span>
-      TaxNumber = String<span style="color:#069;font-weight:700">;</span> 
+      TaxNumber = String<span style="color:#069;font-weight:700">;</span>
       <span style="color:#0053ff;font-weight:700">$Name</span> = <span style="color:#666">"Doe Software Inc."</span><span style="color:#069;font-weight:700">;</span>
       <span style="color:#0053ff;font-weight:700">$Founder</span> = <span style="color:#666">"John Doe"</span><span style="color:#069;font-weight:700">;</span>
-      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span> @ (1)<span style="color:#069;font-weight:700">;</span>    
+      <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span> @ (1)<span style="color:#069;font-weight:700">;</span>
   }
                 </pre>
               </code>
@@ -1094,7 +1090,7 @@ Student {
       <span style="color:#0053ff;font-weight:700">$Name</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"Doe Software Inc."</span>;
       Founder <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$Founder</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"John Doe"</span>;
-      TaxNumber <span style="color:#069;font-weight:700">=</span> String; 
+      TaxNumber <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#0053ff;font-weight:700">$TaxNumber</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"123456789987654321"</span>;
   }</pre>
               </code>
@@ -1218,11 +1214,11 @@ Student {
       <span style="color:#af82d4">/* Value assigned to Founder element */</span>
       <span style="color:#0053ff;font-weight:700">$Founder</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"John Doe"</span>;
       <span style="color:#af82d4">/* TaxNumber member element definition */</span>
-      TaxNumber <span style="color:#069;font-weight:700">=</span> String; 
+      TaxNumber <span style="color:#069;font-weight:700">=</span> String;
       <span style="color:#af82d4">/* Value assigned to TaxNumber element */</span>
       <span style="color:#0053ff;font-weight:700">$TaxNumber</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"123456789987654321"</span>;
   }
-  <span style="color:#af82d4">/* End of Company element declaration */</span>          
+  <span style="color:#af82d4">/* End of Company element declaration */</span>
   </pre>
               </code>
           </div>
@@ -1388,7 +1384,7 @@ Company <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span st
     Founder = String<span style="color:#069;font-weight:700">;</span>
     <span style="color:#0053ff;font-weight:700">$Founder</span> = <span style="color:#666">"John Doe"</span><span style="color:#069;font-weight:700">;</span>
     TaxNumber = String<span style="color:#069;font-weight:700">;</span>
-    <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>  
+    <span style="color:#0053ff;font-weight:700">$TaxNumber</span> = <span style="color:#666">"123456789987654321"</span><span style="color:#069;font-weight:700">;</span>
 }
                 </pre>
             </code>
@@ -1488,7 +1484,7 @@ Department {
     LastName <span style="color:#069;font-weight:700">=</span> String;
     FullName <span style="color:#069;font-weight:700">=</span> String;
     $FullName <span style="color:#069;font-weight:700">=</span> ($FirstName <span style="color:#069;font-weight:700">+</span> <span style="color:#666">" "</span> <span style="color:#069;font-weight:700">+</span> $LastName);
-                
+
     <span style="color:#069;font-weight:700">/</span><span style="color:#069;font-weight:700">*</span> FormatCurrency <span style="color:#069;font-weight:700">function</span> takes <span style="color:#a8017e">2</span> parameters
       <span style="color:#069;font-weight:700">*</span> param1: Amount
       <span style="color:#069;font-weight:700">*</span> param2: Decimal Count
@@ -1537,21 +1533,21 @@ Department {
           <div class="divCodePreview">
             <code>
                 <pre style="background:#fff;color:#3b3b3b">lhs selector = (
-                    
-    {blank},                
-    universal selector | selector operand,                
-    {blank},                
-    {                
-        selector operator,            
-        {blank},            
-        selector operand            
-    }                
-),                    
-{                    
-    {blank},                
-    comma symbol,                
-    {blank},                
-    lhs selector                
+
+    {blank},
+    universal selector | selector operand,
+    {blank},
+    {
+        selector operator,
+        {blank},
+        selector operand
+    }
+),
+{
+    {blank},
+    comma symbol,
+    {blank},
+    lhs selector
 };                    </pre>
             </code>
           </div>
@@ -1563,11 +1559,11 @@ Department {
           <div class="divCodePreview">
             <code>
               <pre style="background:#fff;color:#3b3b3b">rhs selector = {blank},
-                  
+
     [unary selector operator],
-                  
+
     identifier,
-                  
+
     {rhs selector};
                   </pre>
             </code>
@@ -1832,8 +1828,8 @@ operand<span style="color:#069;font-weight:700"> | </span>expression,
               <pre style="background:#fff;color:#3b3b3b">unary <span style="color:#069;font-weight:700">operator</span> = <span style="color:#666">"+"</span> | <span style="color:#666">"-"</span> | <span style="color:#666">"!"</span> | <span style="color:#666">"~"</span>
         | increment <span style="color:#069;font-weight:700">operator</span>
         | decrement <span style="color:#069;font-weight:700">operator</span>;
-                
-                
+
+
 <span style="color:#069;font-weight:700">operator</span> = <span style="color:#666">"*"</span> | <span style="color:#666">"/"</span> | <span style="color:#666">"<span style="background:#900;color:#fff">%</span>"</span> | <span style="color:#666">"+"</span> | <span style="color:#666">"-"</span> | <span style="color:#666">"&amp;lt;&amp;lt;"</span> | <span style="color:#666">"&amp;gt;&amp;gt;"</span> | <span style="color:#666">"&amp;lt;"</span>
         | <span style="color:#666">"&amp;gt;"</span> | <span style="color:#666">"&amp;lt;="</span> | <span style="color:#666">"&amp;gt;="</span> | <span style="color:#666">"=="</span> | <span style="color:#666">"!="</span> | <span style="color:#666">"&amp;"</span> | <span style="color:#666">"^"</span> | <span style="color:#666">"|"</span>
         | <span style="color:#666">"&amp;&amp;"</span> | <span style="color:#666">"||"</span>;
@@ -2135,7 +2131,7 @@ operand<span style="color:#069;font-weight:700"> | </span>expression,
           <div class="divCodePreview">
             <code>
                 <pre style="background:#fff;color:#3b3b3b">(<span style="color:#069;font-weight:700">*</span><span style="color:#069;font-weight:700">*</span>
-                  
+
  <span style="color:#069;font-weight:700">*</span> MODO LANGUAGE DEFINITION
  <span style="color:#069;font-weight:700">*</span> <span style="color:#af82d4">-------------------------</span>
  <span style="color:#069;font-weight:700">*</span> This chapter defines Modo language syntax using
@@ -2151,7 +2147,7 @@ operand<span style="color:#069;font-weight:700"> | </span>expression,
  <span style="color:#069;font-weight:700">*</span> <span style="color:#af82d4">--------------------------------</span>
  <span style="color:#069;font-weight:700">*</span> Letters, characters, digits, symbols <span style="color:#069;font-weight:700">and</span> operators
  <span style="color:#069;font-weight:700">*</span>)
- 
+
 letter <span style="color:#069;font-weight:700">=</span> <span style="color:#666">"A"</span> | <span style="color:#666">"B"</span> | <span style="color:#666">"C"</span> | <span style="color:#666">"D"</span> | <span style="color:#666">"E"</span> | <span style="color:#666">"F"</span> | <span style="color:#666">"G"</span> | <span style="color:#666">"H"</span>
 
         | <span style="color:#666">"I"</span> | <span style="color:#666">"J"</span> | <span style="color:#666">"K"</span> | <span style="color:#666">"L"</span> | <span style="color:#666">"M"</span> | <span style="color:#666">"N"</span> | <span style="color:#666">"O"</span> | <span style="color:#666">"P"</span>
@@ -2358,7 +2354,7 @@ operand <span style="color:#069;font-weight:700">=</span> {start group symbol},
         |
         (
             [
-                unary operator 
+                unary operator
                 <span style="color:#069;font-weight:700">-</span> (increment operator | decrement operator)
             ],
             {blank},
@@ -2379,7 +2375,7 @@ operand <span style="color:#069;font-weight:700">=</span> {start group symbol},
         |
         (
             [
-                unary operator 
+                unary operator
                 <span style="color:#069;font-weight:700">-</span> (increment operator | decrement operator)
             ],
             {blank},
@@ -2518,7 +2514,7 @@ selector expression <span style="color:#069;font-weight:700">=</span> {blank},
  <span style="color:#069;font-weight:700">*</span> <span style="color:#af82d4">----------------------------------</span>
  <span style="color:#069;font-weight:700">*</span> Final Modo definition
  <span style="color:#069;font-weight:700">*</span>)
-modo <span style="color:#069;font-weight:700">=</span> { 
+modo <span style="color:#069;font-weight:700">=</span> {
     directive
     | rule
     | declaration
@@ -2677,7 +2673,7 @@ modo <span style="color:#069;font-weight:700">=</span> {
     </div>
     <div class="fixed-action-btn">
       <a href="contact.html" class="btn-floating btn-large tooltipped logoColor" data-position="left" data-delay="50" data-tooltip="Contact!">
-        <i class="large material-icons">mail</i>
+        <i class="large ion-android-mail"></i>
       </a>
     </div>
   </main>
