@@ -263,15 +263,29 @@ blockquote {
 #mainDocumentation .wrapper section .container {
   width: 85% !important;
 }
-#mainDocumentation .wrapper section .container h2 {
-  font-size: 2.1em;
-  border-bottom: 1px dashed;
+#mainDocumentation h1 {
+  font-weight: lighter;
+  margin-top:100px;
+  margin-bottom: 40px;
+  color:rgb(103, 184, 222);
+  font-size: 48px;
+  line-height: normal;
+}
+#mainDocumentation h2 {
+  font-weight: normal;
+  font-size: 2.0em;
   padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:rgb(103, 184, 222);
 }
 #mainDocumentation .wrapper section .container p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   color: #646C7F;
+  line-height: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #mainDocumentation .wrapper section .container p a {
   color: #0087F7;
