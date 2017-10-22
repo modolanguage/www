@@ -139,6 +139,8 @@ blockquote {
   width: auto;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
 }
 #sectionIndexBanner .container #btnGoStart {
   background: rgb(51, 153, 204);
@@ -204,6 +206,22 @@ blockquote {
   margin-bottom: 100px;
   box-sizing: border-box;
   text-align: center;
+}
+#navbarFixed .aGetStarted {
+  background: rgb(51, 153, 204);
+  color: #fff;
+}
+#navbarFixed .aMobileMenuButton {
+  color: rgb(51, 153, 204);
+  line-height: normal;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin:0px;
+}
+#rowBannerButtons .aBannerButtons {
+  display: block;
+  margin-bottom: 10px;
 }
 #mainDocumentation {
   position: relative;
