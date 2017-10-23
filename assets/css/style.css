@@ -225,6 +225,7 @@ blockquote {
 }
 #mainDocumentation {
   position: relative;
+  padding-left: 300px;
 }
 #mainDocumentation ol, #mainDocumentation ul {
   background: #FFF;
@@ -249,11 +250,13 @@ blockquote {
   font-weight: 200;
   transition: all .1s;
 }
+/*
 #mainDocumentation .ulSubCategory a.active,
 #mainDocumentation .ulSubCategory a:active {
   font-weight: 500;
   border-left: 5px solid #59C8FF;
 }
+*/
 #mainDocumentation .wrapper {
   flex-grow: 1;
 }
@@ -287,9 +290,13 @@ blockquote {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#mainDocumentation .wrapper section .container p a {
-  color: #0087F7;
-  text-decoration: none;
+#mainDocumentation .wrapper section .container a {
+  color: rgb(51, 153, 204);
+  text-decoration: underline;
+}
+table a {
+  color: rgb(51, 153, 204);
+  text-decoration: underline; 
 }
 #mainDocumentation .wrapper section .container p a:hover {
   text-decoration: underline;
@@ -501,8 +508,11 @@ form button {
 }
 
 @media screen and (max-width: 992px) {
-  #sectionGetStarted {
+  #mainDocumentation section {
     margin-top: 94px !important;
+  }
+  #mainDocumentation {
+    padding-left: 0px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -517,10 +527,15 @@ form button {
     height: 1em;
   }
 }
+#ulMobileMenu {
+  z-index: 1000;
+}
 #ulMobileMenu #btnQuickstart {
   text-align: left !important;
 }
-
+#ulMobileMenu > li i {
+  font-size: 24px;
+}
 .footer-copyright .container a {
   text-decoration: underline;
   color: #f9f9f9;

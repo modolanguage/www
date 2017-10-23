@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -11,121 +12,52 @@
   <meta property="og:title" content="Modo. Modeling Language for Everyone!">
   <meta property="og:image" content="http://www.modolanguage.org/asts/imgs/facebooklogo.png">
   <meta property="og:site_name" content="Modo. Modeling Language for Everyone!">
-  <meta property="og:description" content="Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems and environment."> 
+  <meta property="og:description" content="Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
+
   <!-- Fav Icons -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/img/favicon.png" type="image/png">
-
   <!-- Materialize CSS -->
   <link rel="stylesheet" href="assets/css/materialize.min.css">
   <link rel="stylesheet" href="assets/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <title>Modo. Modeling Language for Everyone!</title>
 </head>
 
 <body>
-  <nav id="navbar-transparent" class="white">
+  <ul class="side-nav fixed" id="ulMobileMenu">
+    <li class="white center-align"><img style="margin-top: 20px;" src="assets/img/modo.svg" width="180" alt="Modo"></li>
+    <li><a class="grey-text active" href="index.html">Home</a></li>
+    <li><a class="grey-text" href="about.html">About</a></li>
+    <li><a class="grey-text" href="specification.html">Specification</a></li>
+    <li class="active"><a class="grey-text" href="contact.html">Contact</a></li>
+    <li><a class="grey-text" href="get-started.html">Get Started!</a></li>
+    <li><a target="_blank" class="grey-text" href="https://github.com/modolanguage"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
+  </ul>
+  <nav id="navbarFixed" class="white hide-on-large-only">
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo light-blue-text"><img src="assets/img/Modo.png" alt="Modo"></a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="ion-android-menu black-text"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionAbout">About</a></li>
-        <li><a class="grey-text" href="documentation.html#sectionSpecification">Specification</a></li>
-        <li><a class="grey-text" href="#download">Downloads</a></li>
-        <li><a class="grey-text" href="#!">Contact</a></li>
-        <li><a class="blue-text text-lighten-1 white" href="documentation.html#sectionGetStarted"><i class="ion-android-open left"></i>Get Started!</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a class="grey-text active" href="#!">Home</a></li>
-        <li><a class="grey-text" href="#!">About</a></li>
-        <li><a class="grey-text" href="#!">Specification</a></li>
-        <li><a class="grey-text" href="#!">Downloads</a></li>
-        <li><a class="grey-text" href="#!">Contact</a></li>
-        <li><a id="btnQuickstart" class="btn light-green accent-4 white-text" href="#!"><i class="ion-android-open left white-text"></i>Quickstart!</a></li>
-      </ul>
+      <a href="index.html" class="brand-logo light-blue-text hide-on-med-and-down"><img src="assets/img/modo.svg" alt="Modo"></a>
+      <a href="#" data-activates="ulMobileMenu" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
     </div>
   </nav>
-  <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3062.2182110112253!2d32.74402430344052!3d39.869349814188624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d35a9555555555%3A0xd6ccfafa3302558e!2sSanpark+Bili%C5%9Fim+Tasar%C4%B1m+Ltd.%C5%9Eti.!5e0!3m2!1str!2str!4v1505076871924"
-      width="100%" height="600" frameborder="0" style="border:0; margin-top: 64px;" allowfullscreen>
-    </iframe>
-    <div class="divContactWrapper">
-      <div id="divContactCard" class="card-panel container">
-        <section id="sectionContact">
-          <div class="container">
-            <h1>Contact</h1>
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12 m12 l6">
-                    <i class="ion-android-person prefix"></i>
-                    <input id="icon_prefix" type="text" class="validate" required="required">
-                    <label for="icon_prefix">Name</label>
-                  </div>
-                  <div class="input-field col s12 m12 l6">
-                    <i class="ion-android-mail prefix"></i>
-                    <input id="icon_telephone" type="email" class="validate" required="required">
-                    <label for="icon_telephone">E-Mail</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <i class="ion-android-textsms prefix"></i>
-                    <input id="icon_telephone" type="tel" class="validate">
-                    <label for="icon_telephone">Subject</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <i class="ion-document-text prefix"></i>
-                    <textarea id="icon_prefix2" class="materialize-textarea" required="required"></textarea>
-                    <label for="icon_prefix2">Message</label>
-                  </div>
-                </div>
-                <div class="row center">
-                  <button class="btn waves-effect waves-light center" type="submit" name="action">Submit
-                        <i class="ion-android-send right"></i>
-                      </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-
-      </div>
-    </div>
-
-  </section>
-
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">MODO</h5>
-          <p class="grey-text text-lighten-4">Modelling language for everyone.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3 light" href="http://www.modolanguage.org">Home</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionAbout">About</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="documentation.html#sectionSpecification">Specification</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="#download">Downloads</a></li>
-            <li><a class="grey-text text-lighten-3 light" href="contact.html">Contact</a></li>
-            <li><a class="grey-text text-lighten-3 bold" href="documentation.html#sectionGetStarted">Get Started!</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
+  <main id="mainDocumentation" class="row noMargin">
+    <!-- Content Start -->
+    <div class="wrapper col s12">
+    <section id="sectionAbout" data-linker="aAbout">
       <div class="container">
-        © 2017 Copyright
+        <h1>Contact Us</h1>
+        <p>Please feel free to share with us your ideas/questions regarding Modo.</p>
+
+        <p>Please use the <a href="https://github.com/modolanguage/www/issues" target="_blank">issue tracker</a> to report any bugs/typos or requests.</p>
+
+        <p>Sanpark IT &amp; Design Co., Ltd.<br><br>Ankara Teknoloji Gelistirme Bolgesi<br>Bilkent Cyberpark Tepe Binasi No: Z34 - Z35<br>06800 Bilkent Cankaya<br>Ankara / Turkey<br><br><a href="//www.sanpark.com" target="_blank">www.sanpark.com</a><br><a href="mailto:ixnfxo@sxanpxarxk.cxom" onmouseover="this.href=this.href.replace(/x/g,'');">in<span style="display: none;"></span>fo@s<span style="display: none;"></span>anp<span style="display: none;"></span>ark.co<span style="display: none;"></span>m</a></p>
+
       </div>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
-  <script src="assets/js/materialize.min.js"></script>
-  <script>
-    $(".button-collapse").sideNav();
-  </script>
+    </section>
+  </div>
+</main>
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/materialize.js"></script>
+<script src="assets/js/documentation.js"></script>
 </body>
-
 </html>

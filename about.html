@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1254">
+  <meta name="keywords" content="Modeling, Code Generation, Semantic Web, Pyronome, Sanpark, Syntax, System Modeling">
+  <meta name="description" content="Modo is an easy to use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
+  <meta name="author" content="Sanpark">
+  <meta property="og:title" content="Modo. Modeling Language for Everyone!">
+  <meta property="og:image" content="http://www.modolanguage.org/asts/imgs/facebooklogo.png">
+  <meta property="og:site_name" content="Modo. Modeling Language for Everyone!">
+  <meta property="og:description" content="Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, containing systems and environment.">
+
+  <!-- Fav Icons -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/ionicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Modo. Modeling Language for Everyone!</title>
+</head>
+
+<body>
+  <ul class="side-nav fixed" id="ulMobileMenu">
+    <li class="white center-align"><img style="margin-top: 20px;" src="assets/img/modo.svg" width="180" alt="Modo"></li>
+    <li><a class="grey-text active" href="index.html">Home</a></li>
+    <li class="active"><a class="grey-text" href="about.html">About</a></li>
+    <li><a class="grey-text" href="specification.html">Specification</a></li>
+    <li><a class="grey-text" href="contact.html">Contact</a></li>
+    <li><a class="grey-text" href="get-started.html">Get Started!</a></li>
+    <li><a target="_blank" class="grey-text" href="https://github.com/modolanguage"><i class="ion-social-github" style="margin-right: 0px;"></i>&nbsp;GitHub</a></li>
+  </ul>
+  <nav id="navbarFixed" class="white hide-on-large-only">
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo light-blue-text hide-on-med-and-down"><img src="assets/img/modo.svg" alt="Modo"></a>
+      <a href="#" data-activates="ulMobileMenu" class="button-collapse aMobileMenuButton"><i class="ion-navicon-round"></i></a>
+    </div>
+  </nav>
+  <main id="mainDocumentation" class="row noMargin">
+    <!-- Content Start -->
+    <div class="wrapper col s12">
+    <section id="sectionAbout" data-linker="aAbout">
+      <div class="container scrollspy" id="divAboutMotivation">
+        <h1>Motivation</h1>
+        <p>Information technologies provide solutions to make our lives easier. Some of them have little effect on our daily
+          and profesional lives, where some can completely change them. Even further, internet makes these solutions, time
+        and location free.</p>
+
+        <p>This rapidly changing world of IT, emerges the need of robust, flexible and efficient software development methods
+          and paradigms. These methods and paradigms should be easy to use, implement and integrate. In addition, these
+          methods and paradigms should have the ability to adapt to the rapidly changing needs and technologies. Numerous
+          studies have been made and several methods have been proposed. Today, these methods are being used by many of
+        the professioanls of the IT and related fields.</p>
+
+        <p>However the complex nature of the current methods requires technical knowledge in depth. This technical depth widens
+        the gap between IT and the non-IT professionals.</p>
+
+        <p>Moreover, with the increasing shift of systems to the online world, there still resides a need to have a semantic
+        representation tool to model and convert real life systems to the world of computers.</p>
+
+        <p>In order to address the above issues and more, we propose the Modo language.</p>
+
+      </div>
+
+      <div class="container scrollspy" id="divWhatisModo">
+        <h1>What is Modo?</h1>
+        <p>
+          Modo is an easy-to-use modeling language which is used for modeling systems, their subsystems, super systems (the system
+          that encompasses the system that is in focus) and environment. The simple syntax of Modo allows easy modeling
+          for not only the IT professionals but also for the professionals from non-IT fields. The well-structured and
+          machine-readable nature of Modo also allows direct conversion of the models to different programming languages
+          and technologies, thus serving as a technology independent modeling method.
+        </p>
+      </div>
+
+      <div class="container scrollspy" id="divBriefHistory">
+        <h1>Brief History</h1>
+        <p>A significant part of software development can be described as an effort of modeling real-life systems, using the
+          computer systems. Computer systems, which are more static, have structured (explicitly definite) or semi-structured
+          nature. On the other hand real-life systems, which are more dynamic, can be structured, semi-structured or most
+        of the time, unstructured.</p>
+
+        <p>In the year 2005, a concept for software development was proposed by Aykut Aydınlı to be used for the projects
+          of Sanpark. The main idea of this concept was to isolate the analysis and the design of real-life systems from
+          the boundaries of computer systems. With the help of this isolated analysis, the idle effort of modeling an unstructured
+          real-life system into a computer system is avoided and the resulting computer system serves as a complete solution.
+        Ensuring the computer system is designed for the real-life system; not vice-versa.</p>
+
+        <p>The isolated analysis needs a method to model and define the real-life system. First real-life system definition
+          was made using XML in the late 2005. This definition enabled isolated analysis of real-life systems, automated
+          conversion to existing technologies, and initiated real-life system versioning. This first definition syntax
+        was used by Sanpark for two years.</p>
+
+        <p>In late 2007, after observing the short-comings of the previous syntax a new language, which does not use the XML
+          syntax anymore, has been constructed for system definition and semantic representation. And there the Modo language
+        was born. There were two main reasons for abandoning the XML syntax:</p>
+
+        <ol class="collection">
+          <li class="collection-item">XML syntax is not easily readable/writable for non-IT professionals and</li>
+          <li class="collection-item">XML is not sufficient to declare systems' different conditions, modes and states for different time frames and/or
+            conditions.
+          </li>
+        </ol>
+
+        <p>Modo's latest shape was given and the language specification was finalized by Aykut Aydınlı and Doruk Eker in June,
+          2009.
+        </p>
+
+      </div>
+
+      <div class="container scrollspy" id="divTheNameModo">
+        <h1>The Name Modo</h1>
+        <p>The word "modo" means "mode" in Esperanto language. Esperanto language is a constructed (artificial) language.
+          It is constructed to narrow the gap between people speaking different languages, having different cultures and
+          having different beliefs.
+        </p>
+        <p>Similarly Modo language is constructed to narrow the gap between people from different disciplines, different technical
+          expertise and different viewpoints.
+        </p>
+      </div>
+
+      <div class="container scrollspy" id="divZeroDefect">
+        <h1>The Zero Defect Software</h1>
+        <p>From a certain point of view, a software which is not serving the needs of the user can be considered as defected.
+        This can be caused by one or both reasons listed below:</p>
+
+        <ol class="collection">
+          <li class="collection-item">There are coding errors (bugs) within the code of the software.</li>
+          <li class="collection-item">The real-life system/problem related to the software was poorly or never analyzed, therefore the resulting computer
+          system fails to serve the real-life system.</li>
+        </ol>
+
+        <p>One should overcome the above issues to get closer to the zero-defect software phenomenon.</p>
+
+        <p>The first type of errors are the runtime errors, namely the bugs in the software. At every line of code developed,
+          there is a certain probability of having something wrong. Therefore as the number of lines of code developed
+          for a project/software increases, the probability of having an error also increases. Reducing the number of lines
+          of code developed specifically for a software project reduces the number of errors. Code generators enable the
+          reduction in number of lines of code. Once the initial bugs in the generator are fixed, in unit time the generated
+        code becomes bug-free.</p>
+
+        <p>Modo is designed to be well-structured and machine readable, and therefore it is possible to use generators to
+        convert Modo models to different languages. With the help of this feature Modo addresses the runtime errors.</p>
+
+        <p>The second type of errors is the design-time errors which are basically the errors that occur when analyzing the
+          systems. The quality of the system analysis is directly related with the experience of the analyzer. However,
+          even for the inexperienced analyzer, the design-time errors can be fixed with trial and error. The trial and
+          error method can only be efficient if the time needed for each trial is affordable. The simple syntax of Modo
+          combined with the rapid code generation, decreases the time needed to try different scenarios. Therefore enabling
+        the trial and error process and addressing also the design-time errors.</p>
+
+      </div>
+
+      <div class="container scrollspy" id="divSemanticWebAndModo">
+        <h1>Semantic Web and Modo</h1>
+        <p>Every moment information technologies yield a large amount of information waiting for humans and systems to discover,
+          filter, process and generate. As the amount of information increases, we have drastically less time to discover,
+          filter and process this information. For this reason, no matter how precise and accurate a piece of information
+          is, it starts to become meaningless, unless its meaning and relations can be understood and processed automatically
+          by computers. Adding the meaning to any piece of information at its very source is the key solution for this
+          problem. This ensures that the information is in the same format at any point of the system, hence the effort
+          of all semantic web standards and specifications.
+        </p>
+        <p>A system which is modeled using Modo, is automatically represented at the semantic level. Different Modo models
+          can include the required metadata for every piece of information to be delivered. This approach of Modo is aimed
+          to be a contribution for the ongoing search of a common semantic definition method.
+        </p>
+      </div>
+
+      <div class="container scrollspy" id="divTermofUse">
+        <h1>Term of Use</h1>
+        <p>This website provides information about the Modo language that is developed by <a href="http://www.sanpark.com/">Sanpark</a>.
+          <a href="http://www.sanpark.com/">Sanpark</a> may partially or entirely update the content of this website at
+        any time and without prior notice.</p>
+
+        <p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0</a> International license.</p>
+
+      </div>
+    </section>
+  </div>
+</main>
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/materialize.js"></script>
+<script src="assets/js/documentation.js"></script>
+</body>
+</html>
