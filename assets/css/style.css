@@ -104,7 +104,7 @@ blockquote {
 }
 
 .landing {
-  height: 100vh !important;
+  min-height: 100vh !important;
   width: 100vw !important;
 }
 
@@ -517,7 +517,7 @@ form button {
     height: 1em;
   }
 }
-#mobile-demo #btnQuickstart {
+#ulMobileMenu #btnQuickstart {
   text-align: left !important;
 }
 
