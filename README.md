@@ -14,7 +14,7 @@ Please use the [issue tracker](https://github.com/modolanguage/www/issues) to re
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/modolanguage/help/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/modolanguage/www/tags). 
 
 ## Authors
 
