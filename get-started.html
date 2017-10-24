@@ -59,29 +59,29 @@
         <div class="container scrollspy" id="divDefineMainElements">
             <h2>Define Main Elements</h2>
             <p>The registration system most likely has students, instructors and courses. Those can be considered as the main elements of that system, and below is how you represent them.</p>
-            <div class="divCodePreview">
+            <div class="divModoCodePreview">
                 <code>
-                    <pre style="background:#fff;color:#3b3b3b"><span style="color:#af82d4">/* Registration System Element Declarations */</span>
-                    Student;
-                    Instructor;
-                    Course;
-                    </pre>
+<pre><span class="grey-text">/* Registration System Element Declarations */</span>
+Student<span style="color:#069;font-weight:700;">;</span>
+Instructor<span style="color:#069;font-weight:700;">;</span>
+Course<span style="color:#069;font-weight:700;">;</span>
+</pre>
                 </code>
             </div>
             <p>As seen above the elements of a system can be declared that easily. However when you want to add the properties of those elements, it is better to use the below representation.</p>
-            <div class="divCodePreview">
+            <div class="divModoCodePreview">
                 <code>
-                    <pre style="background:#fff;color:#3b3b3b"><span style="color:#af82d4">/* Registration System Element Declarations */</span>
-                        Student{
-                    }
-                    Instructor{
-                    }
-                    Course{
-                    }
-                    </pre>
+<pre><span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+<span style="color:#069;font-weight:700;">}</span>
+Instructor <span style="color:#069;font-weight:700;">{</span>
+<span style="color:#069;font-weight:700;">}</span>
+Course <span style="color:#069;font-weight:700;">{</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
                 </code>
             </div>
-            <p>It is the common practice to define singular elements, and let the frameworks handle the groups of those elements. That is why the above example defines <span class="light light-blue-text text-accent-4">Student</span>, <span class="light light-blue-text text-accent-4">Instructor</span> and <span class="light light-blue-text text-accent-4">Course</span>, instead of <span class="light light-blue-text text-accent-4">Students</span>, <span class="light light-blue-text text-accent-4">Instructors</span> and <span class="light light-blue-text text-accent-4">Courses</span>.</p>
+            <p>It is the common practice to define singular elements, and let the frameworks handle the groups of those elements. That is why the above example defines <span class="spanInlineIdentifier">Student</span>, <span class="spanInlineIdentifier">Instructor</span> and <span class="spanInlineIdentifier">Course</span>, instead of <span class="spanInlineIdentifier">Students</span>, <span class="spanInlineIdentifier">Instructors</span> and <span class="spanInlineIdentifier">Courses</span>.</p>
             <p>&nbsp;</p>
         </div>
 <div class="container scrollspy" id="divDefineMemberElements">
@@ -89,27 +89,28 @@
   <p>The elements of the registration system have some properties in real-life. Like the name and surname of a student,
     like the ID of a course etc. Those properties are called <strong>member elements</strong> in Modo.</p>
 
-    <div class="divCodePreview">
+    <div class="divModoCodePreview">
         <code>
-            <pre style="background:#fff;color:#3b3b3b">/* Registration System Element Declarations */
-              Student {
-              Name = String;
-              Surname = String;
-              ID = Number;
-              GPA = Number;
-          }
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 
-          Instructor {
-          Name = String;
-          Surname = String;
-          ID = Number;
-      }
+Instructor <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 
-      Course {
-      Name = String;
-      ID = Number;
-      Instructor = Instructor;
-  }
+Course <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Instructor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 </pre>
 </code>
 </div>
@@ -121,7 +122,7 @@ of the relations between elements.</p>
 <p>Modo language does not contain any built-in elements. However, built-in elements can be defined in different syntaxes
 of Modo, which are designed for different technologies.</p>
 
-<p>In lines 3, 4, 9, 10 and 14 the built-in element <span class="light light-blue-text text-accent-4">String</span>            is used, where in line 18 the user-defined element <span class="light light-blue-text text-accent-4">Instructor</span>            is used as the type of the member element.</p>
+<p>In lines 3, 4, 9, 10 and 14 the built-in element <span class="spanInlineIdentifier">String</span>            is used, where in line 18 the user-defined element <span class="spanInlineIdentifier">Instructor</span>            is used as the type of the member element.</p>
 
 <p>&nbsp;</p>
 </div>
@@ -130,24 +131,25 @@ of Modo, which are designed for different technologies.</p>
   <h2>Element Type vs. Element Value</h2>
   <p>When there is a need to access the value of a certain member element, a dollar symbol ($) is placed preceding the
   element name.</p>
-  <div class="divCodePreview">
+  <div class="divModoCodePreview">
     <code>
-        <pre style="background:#fff;color:#3b3b3b"><span style="color:#af82d4">/* Student Element Declaration */</span>
-            Student {
-            Name <span style="color:#069;font-weight:700">=</span> String;
-            Surname <span style="color:#069;font-weight:700">=</span> String;
-            ID <span style="color:#069;font-weight:700">=</span> Number;
-            GPA <span style="color:#069;font-weight:700">=</span> Number;
-            Fullname <span style="color:#069;font-weight:700">=</span> String;
-            <span style="color:#0053ff;font-weight:700">$Fullname</span> <span style="color:#069;font-weight:700">=</span> <span style="color:#0053ff;font-weight:700">$Name</span> <span style="color:#069;font-weight:700">+</span> <span style="color:#666">' '</span> <span style="color:#069;font-weight:700">+</span> <span style="color:#0053ff;font-weight:700">$Surname</span>;
-        }
-    </pre>
+<pre>
+<span class="grey-text">/* Student Element Declaration */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">$</span>Fullname <span style="color:#069;font-weight:700;">=</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Name</span> <span style="color:#069;font-weight:700;">+</span> <span style="color: #3399CC;">' '</span> <span style="color:#069;font-weight:700;">+</span> <span style="color:#069;font-weight:700;">$</span><span style="color: #3399CC;">Surname</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
 </code>
 </div>
 
-<p>In the above example the type of the <span class="light light-blue-text text-accent-4">Fullname</span> member element
-    is <span class="light light-blue-text text-accent-4">String</span>. However the value of the element is a string
-    combination of the values of the member elements <span class="light light-blue-text text-accent-4">Name</span>            and <span class="light light-blue-text text-accent-4">Surname</span>. This shows that at any time, the value
+<p>In the above example the type of the <span class="spanInlineIdentifier">Fullname</span> member element
+    is <span class="spanInlineIdentifier">String</span>. However the value of the element is a string
+    combination of the values of the member elements <span class="spanInlineIdentifier">Name</span>            and <span class="spanInlineIdentifier">Surname</span>. This shows that at any time, the value
 of the fullname property of a student is his/her name, surname and a single space in between them.</p>
 
 <p>&nbsp;</p>
@@ -156,79 +158,82 @@ of the fullname property of a student is his/her name, surname and a single spac
 <div class="container scrollspy" id="divExtendElements">
   <h2>Extend Your Elements</h2>
   <p>Different elements can be derived from built-in elements or previously defined elements.</p>
-  <div class="divCodePreview">
+  <div class="divModoCodePreview">
     <code>
-        <pre style="background:#fff;color:#3b3b3b">/* Registration System Element Declarations */
-            Student {
-            Name = String;
-            Surname = String;
-            ID = Number;
-            GPA = Number;
-            Advisor = Advisor;
-        }
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Advisor</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 
-        Instructor {
-        Name = String;
-        Surname = String;
-        ID = Number;
-    }
+Instructor <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 
-    Advisor = Instructor {
-    OfficeDay = Weekday;
-}
+Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
+    OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 </pre>
 </code>
 </div>
-<p>In the above example a new element <span class="light light-blue-text text-accent-4">Advisor</span> is defined.
-    The advisor is in fact an <span class="light light-blue-text text-accent-4">Instructor</span> but an additional
+<p>In the above example a new element <span class="spanInlineIdentifier">Advisor</span> is defined.
+    The advisor is in fact an <span class="spanInlineIdentifier">Instructor</span> but an additional
 property of office day is added.</p>
 
 <p>The member elements can also be extended like the elements.</p>
-<div class="divCodePreview">
+<div class="divModoCodePreview">
     <code>
-        <pre style="background:#fff;color:#3b3b3b">/* Registration System Element Declarations */
-            Student {
-            Name = String;
-            Surname = String;
-            ID = Number;
-            GPA = Number;
-            Advisor = Instructor {
-            OfficeDay = Weekday;
-        }
-    }
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    Advisor <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Instructor</span> <span style="color:#069;font-weight:700;">{</span>
+        OfficeDay <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Weekday</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">}</span>
+<span style="color:#069;font-weight:700;">}</span>
 
-    Instructor {
-    Name = String;
-    Surname = String;
-    ID = Number;
-}
+Instructor <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+<span style="color:#069;font-weight:700;">}</span>
 </pre>
 </code>
 </div>
-<p>In the above example the member element <span class="light light-blue-text text-accent-4">Advisor</span> of the
-    element <span class="light light-blue-text text-accent-4">Student</span> extends the element <span class="light light-blue-text text-accent-4">Instructor</span>            adding the property of office day.</p>
+<p>In the above example the member element <span class="spanInlineIdentifier">Advisor</span> of the
+    element <span class="spanInlineIdentifier">Student</span> extends the element <span class="spanInlineIdentifier">Instructor</span>            adding the property of office day.</p>
 
     <p>&nbsp;</p>
 </div>
 <div class="container scrollspy" id="divDifferentStates">
   <h2>Different States of the System</h2>
   <p>Modo can also represent different states of the system. The at symbol (@) is used to define those rules.</p>
-  <div class="divCodePreview">
+  <div class="divModoCodePreview">
     <code>
-        <pre style="background:#fff;color:#3b3b3b">/* Registration System Element Declarations */
-            Student {
-            Name = String;
-            Surname = String;
-            ID = Number;
-            GPA = Number;
-            CanGraduate = Boolean;
-            $CanGraduate = true @ ($GPA >= 2);
-            $CanGraduate = false @ ($GPA &lt; 2);
-        }
-    </pre>
+<pre>
+<span class="grey-text">/* Registration System Element Declarations */</span>
+Student <span style="color:#069;font-weight:700;">{</span>
+    Name <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    Surname <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">String</span><span style="color:#069;font-weight:700;">;</span>
+    ID <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    GPA <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Number</span><span style="color:#069;font-weight:700;">;</span>
+    CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">Boolean</span><span style="color:#069;font-weight:700;">;</span>
+    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">true</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&gt;=</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
+    <span style="color:#069;font-weight:700;">$</span>CanGraduate <span style="color:#069;font-weight:700;">=</span> <span style="color: #3399CC;">false</span> <span style="color:#069;font-weight:700;">@</span> <span style="color:#069;font-weight:700;">($</span>GPA <span style="color:#069;font-weight:700;">&lt;</span> <span style="color: #3399CC;">2</span><span style="color:#069;font-weight:700;">);</span>
+<span style="color:#069;font-weight:700;">}</span>
+</pre>
 </code>
 </div>
-<p>The above example adds a new member element <span class="light light-blue-text text-accent-4">CanGraduate</span>            to the <span class="light light-blue-text text-accent-4">Student</span> element. The value of this member element
+<p>The above example adds a new member element <span class="spanInlineIdentifier">CanGraduate</span>            to the <span class="spanInlineIdentifier">Student</span> element. The value of this member element
 changes for different values of the GPA member element.</p>
 
 <p>For more detailed information, please <a href="index.html#download">download</a> Modo Language Specification

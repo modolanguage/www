@@ -48,10 +48,6 @@
   color: #8f908a;
 }
 
-strong {
-  color: #3C3E43;
-}
-
 h1 {
   font-size: 3em;
 }
@@ -120,11 +116,35 @@ blockquote {
   font-family: "Anonymous Pro", monospace;
   font-size: 18px;
 }
-.divCodePreview code pre {
-  background: #F5F6F8 !important;
+.divCodePreview code pre,
+.divEBNFCodePreview code pre {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+  background: #F5F6F8;
+  color:#3b3b3b;
   border-radius: 3px;
 }
+.divEBNFCodePreview code pre {
+  background: #fff;
+}
 
+.divModoCodePreview code pre {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+  border-radius: 3px;
+  background: #ecf8ff;
+  color:#3b3b3b;
+}
+.spanInlineIdentifier {
+  font-family: "Anonymous Pro", monospace;
+  font-size: 18px;
+  color:#424856;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.collection .collection-item {
+  line-height: normal;
+}
 #sectionWelcome,
 #sectionPromotionTable,
 #sectionReadytoGo {
@@ -278,10 +298,19 @@ blockquote {
   font-weight: normal;
   font-size: 2.0em;
   padding-bottom: 5px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color:rgb(103, 184, 222);
+}
+#mainDocumentation h3 {
+  font-weight: normal;
+  font-size: 1.5em;
+  padding-bottom: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
   color:rgb(103, 184, 222);
 }
+
 #mainDocumentation .wrapper section .container p {
   font-size: 18px;
   font-weight: 300;
@@ -300,10 +329,6 @@ table a {
 }
 #mainDocumentation .wrapper section .container p a:hover {
   text-decoration: underline;
-}
-#mainDocumentation .wrapper section .container ul {
-  font-size: 16px !important;
-  color: #646C7F;
 }
 #mainDocumentation .wrapper section:nth-child(odd) {
   background: #FFF;
@@ -539,5 +564,14 @@ form button {
 .footer-copyright .container a {
   text-decoration: underline;
   color: #f9f9f9;
+}
+ol.collection,
+ul.collection {
+  font-size: 18px;
+  font-weight: 300;
+  color: #646C7F;
+  line-height: normal;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
